@@ -1,7 +1,9 @@
 # projeto_pethero
 A PetHero vem com a missão de conectar pessoas voluntarias com a causa animal a cuidadores independentes.
 
+Cores: Azul e Laranja
 
+TELAS:
 1º Tela: Home 
 •	Menu (Visão / Cuidadores / Cadastro de cuidadores / Adote um pet)
 •	Uma imagem referente ao projeto
