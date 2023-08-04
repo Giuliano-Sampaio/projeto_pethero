@@ -1,0 +1,35 @@
+<style>
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: Arial, sans-serif;
+            }
+        
+            .navbar {
+                background-color: #00BFFF;
+                padding: 10px;
+            }
+        
+            .navbar a {
+                color: #fff;
+                text-decoration: none;
+                padding: 8px 16px;
+                position: left;
+            }
+        
+            .navbar a:hover {
+                background-color: #FF8C00;
+            }
+        
+            .grid-container {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+                padding: 20px;
+            }
+        
+            .grid-item img {
+                max-width: 100%;
+                height: auto;
+            }
+      </style>
