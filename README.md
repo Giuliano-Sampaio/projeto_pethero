@@ -1,4 +1,7 @@
-# projeto_pethero
+# Projeto Integrador Proz Educação - Nome do Projeto: Pethero
+
+
+
 A PetHero vem com a missão de conectar pessoas voluntarias com a causa animal a cuidadores independentes.
 
 Cores: Azul e Laranja
