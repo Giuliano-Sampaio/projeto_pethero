@@ -32,8 +32,8 @@ A PetHero vem com a missão de conectar pessoas voluntarias com a causa animal a
 
 1º Tela: ***Home*** 
 
-*	Menu (Home | Sobre Nós | Heróis | Quero ser um Herói | Adote um pet | Entrar/Cadastro)
-*	Uma imagem referente ao projeto
+*	Menu (Home | Sobre Nós | Heróis | Quero ser um Herói | Adote um pet | Entrar/Cadastro).
+*	Uma imagem referente ao projeto e algumas informações.
 
 2º Tela: ***Sobre Nós***
 
@@ -43,22 +43,23 @@ A PetHero vem com a missão de conectar pessoas voluntarias com a causa animal a
 
 3º Tela: ***Heróis***
 
-*	Cuidadores já cadastrados
-*	Imagem do cuidador ou do local onde cuida dos pets
-*	História sobre o cuidador e local
-*	E contato do cuidador para doações e afins
+*	Cuidadores independentes já cadastrados.
+*	Imagem do cuidador ou do local onde cuida dos pets.
+*	História sobre o cuidador e local.
+*	Contato do cuidador para doações e afins.
+
 
 4º Tela: ***Quero ser um Herói***
 
-*	Tela destinada a cuidadores que queiram se cadastrar na plataforma para conseguir ajuda
+*	Tela destinada a Heróis (cuidadores independentes) que queiram se cadastrar na plataforma para conseguir ajuda para seus pets.
 
 5º Tela: ***Adote um Pet***
 
- * Imagem dos pets disponíveis para adoção com contato e localidade de seu respectivo cuidador
+ * Imagem dos pets disponíveis para adoção com contato e localidade de seu respectivo Herói (cuidador independente).
 
  6º Tela: ***Entrar/Cadastro***
 
- * Tela destinada a login
+ * Tela destinada a login dos usuários e/ou possíveis ajudantes da causa, seja com doação em dinheiro, rações ou medicamentos.
 
 ---
 
