@@ -1,0 +1,12 @@
+main h2 {
+ text-align: center;
+}
+section {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+section div {
+  width: 300px;
+}
