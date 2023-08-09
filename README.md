@@ -57,7 +57,7 @@ A PetHero vem com a missão de conectar pessoas voluntarias com a causa animal a
 
  * Imagem dos pets disponíveis para adoção com contato e localidade de seu respectivo Herói (cuidador independente).
 
- 6º Tela: ***Entrar/Cadastro***
+ 6º Tela: ***Quero Ajudar***
 
  * Tela destinada a login dos usuários e/ou possíveis ajudantes da causa, seja com doação em dinheiro, rações ou medicamentos.
 
