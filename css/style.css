@@ -1,53 +1,57 @@
-<style>
-            body {
-                margin: 0;
-                padding: 0;
-                font-family: Arial, sans-serif;
-            }
-        
-            .navbar {
-                background-color: #00BFFF;
-                padding: 10px;
-            }
-        
-            .navbar a {
-                color: #fff;
-                text-decoration: none;
-                padding: 8px 16px;
-                position: left;
-            }
-        
-            .navbar a:hover {
-                background-color: #FF8C00;
-            }
-        
-            .grid-container {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                gap: 20px;
-                padding: 20px;
-            }
-        
-            .grid-item img {
-                max-width: 100%;
-                height: auto;
-            }
+<style>body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
 
-            .caixa {
-                background-color: #00BFFF;
+.navbar {
+    background-color: #00BFFF;
+    padding: 10px;
+}
 
-                padding-top: 50px;
-                padding-right: 50px;
-                padding-bottom: 50px;
-                padding-left: 50px;
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    position: left;
+}
 
-                margin-top: 80px;
-                margin-right: 80px;
-                margin-bottom: 80px;
-                margin-left: 80px;
+.navbar a:hover {
+    background-color: #FF8C00;
+}
 
-                border-radius: 8px ;
-            }
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.caixa {
+    background-color: #00BFFF;
+
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+
+    margin-top: 80px;
+    margin-right: 80px;
+    margin-bottom: 80px;
+    margin-left: 80px;
+
+    border-radius: 8px;
+}
 
 
-      </style>
+footer {
+    text-align: center;
+    padding: 30px ;
+}
+
+</style>
