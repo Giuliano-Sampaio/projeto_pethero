@@ -34,6 +34,8 @@
             }
 
             .caixa {
+                background-color: #00BFFF;
+
                 padding-top: 50px;
                 padding-right: 50px;
                 padding-bottom: 50px;
@@ -44,7 +46,7 @@
                 margin-bottom: 80px;
                 margin-left: 10px;
 
-                border: 8px solid #00BFFF;
+                border-radius: 8px ;
             }
 
 
