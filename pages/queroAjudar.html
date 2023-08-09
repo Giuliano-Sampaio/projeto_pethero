@@ -5,32 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link href="../css/style.css" rel="stylesheet"> 
-     <!--          ### Retirando os comentários o style  aparece -->
+    <link href="../css/style.css" rel="stylesheet">
+    <!--          ### Retirando os comentários o style  aparece -->
     <title>PetHero</title>
+    <style type="text/css">
+        header {
+            font-size: 40px;
+        }
+
+    </style>
+
 
 <body>
     </head>
 
     <body>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="./pages/sobreNos.html">Sobre nós</a>
-            <a href="./pages/herois.html">Heróis</a>
-            <a href="./pages/queroSerUmHeroi.html">Quero ser um Herói</a>
-            <a href="./pages/adoteUmPet.html">Adote um Pet</a>
-            <a href="./pages/queroAjudar.html">Quero Ajudar</a>
-        </nav>
         <div class="navbar">
-            <span>
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="sobreNos.html">Sobre nós</a>
+                <a href="herois.html">Heróis</a>
+                <a href="queroSerUmHeroi.html">Quero ser um Herói</a>
+                <a href="adoteUmPet.html">Adote um Pet</a>
+                <a href="queroAjudar.html">Quero Ajudar</a>
+            </nav>
+        </div>
 
-                <h1>PetHero</h1>
-                <img src="img/logo-pethero.png" width="150px" alt="Logo PetHero">
+        <span>
 
-            </span>
+            <h1>PetHero</h1>
+            <img src="../img/logo-pethero.png" width="150px" alt="Logo PetHero">
+
+        </span>
 
         </div>
     </body>
+
+
     <main>
         <h2>Login</h2>        
     <form action="/login" method="post">
@@ -55,14 +66,19 @@
         <br>
         <label for="senha_cadastro">Senha:</label>
         <input type="password" id="senha_cadastro" name="senha_cadastro" required>
+	<br>
+	<label for="como_quer_ajudar">Como deseja ajudar?:</label>
+        <input type="text" id="como_quer_ajudar" name="como_quer_ajudar" required>
         <br>
         <br>
         <input type="submit" value="Cadastrar">
+	<br>
+        <br>
     </form>
-     
     </main>
+
     <footer>
-        <img src="img/logo-pata-pethero.png" width="40px"" alt="Logo pata PetHero">
+        <img src="../img/logo-pata-pethero.png" width="40px"" alt=" Logo pata PetHero">
         <p class="copyrigth">&copy; Copyrigth PetHero - 2023</p>
     </footer>
 
