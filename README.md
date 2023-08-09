@@ -22,7 +22,7 @@ A PetHero vem com a missão de conectar pessoas voluntarias com a causa animal a
 
 ---
 
-### Cores utilizadas no site: Azul e Laranja
+### Cores utilizadas no site: Azul #00BFFF e Laranja #FF8C00
 
 ---
 
