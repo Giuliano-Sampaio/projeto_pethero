@@ -22,7 +22,7 @@ A PetHero vem com a missão de conectar pessoas voluntarias com a causa animal a
 
 ---
 
-### Cores utilizadas no site: Azul e Laranja
+### Cores utilizadas no site: Azul #00BFFF e Laranja #FF8C00
 
 ---
 
@@ -30,18 +30,18 @@ A PetHero vem com a missão de conectar pessoas voluntarias com a causa animal a
 
 ### TELAS:
 
-1º Tela: ***Home*** 
+1º Tela: ***Home*** - Giuliano Sampaio
 
-*	Menu (Home | Sobre Nós | Heróis | Quero ser um Herói | Adote um pet | Entrar/Cadastro).
+*	Menu (Home | Sobre Nós | Heróis | Quero ser um Herói | Adote um pet | Quero ajudar).
 *	Uma imagem referente ao projeto e algumas informações.
 
-2º Tela: ***Sobre Nós***
+2º Tela: ***Sobre Nós*** - Ana Monteiro
 
 *	Texto e imagens referentes a Visão
 *	Texto e imagens referentes a Missão
 *	Texto e imagens referentes a Valores
 
-3º Tela: ***Heróis***
+3º Tela: ***Heróis*** - Ney Hiwerson
 
 *	Cuidadores independentes já cadastrados.
 *	Imagem do cuidador ou do local onde cuida dos pets.
@@ -49,15 +49,15 @@ A PetHero vem com a missão de conectar pessoas voluntarias com a causa animal a
 *	Contato do cuidador para doações e afins.
 
 
-4º Tela: ***Quero ser um Herói***
+4º Tela: ***Quero ser um Herói*** - Tati Alvarenga
 
 *	Tela destinada a Heróis (cuidadores independentes) que queiram se cadastrar na plataforma para conseguir ajuda para seus pets.
 
-5º Tela: ***Adote um Pet***
+5º Tela: ***Adote um Pet*** - Raimundo Neto
 
  * Imagem dos pets disponíveis para adoção com contato e localidade de seu respectivo Herói (cuidador independente).
 
- 6º Tela: ***Entrar/Cadastro***
+ 6º Tela: ***Quero Ajudar*** - Bianca Sosa
 
  * Tela destinada a login dos usuários e/ou possíveis ajudantes da causa, seja com doação em dinheiro, rações ou medicamentos.
 
@@ -72,5 +72,5 @@ A PetHero vem com a missão de conectar pessoas voluntarias com a causa animal a
 | `Raimundo Neto` | <a href="https://github.com/RaimundoNeto"> <img height="30" alt="GitHub do Raimundo " src="https://img.shields.io/badge/-Github-000?style=flat-square&logo=Github&logoColor=white"></a> | [![Github Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/raimundo-rodrigues-de-moura-neto/) |
 | `Tati Alvarenga` | <a href="https://github.com/TatiAlvarenga"> <img height="30" alt="GitHub da Tati" src="https://img.shields.io/badge/-Github-000?style=flat-square&logo=Github&logoColor=white"></a> | [![Github Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/tati-alvarenga-29b85157/) |
 | `Ney Hiwerson` | <a href="https://github.com/NeyHiwerson"> <img height="30" alt="GitHub do Ney" src="https://img.shields.io/badge/-Github-000?style=flat-square&logo=Github&logoColor=white"></a> | [![Github Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)]() |
-| `Bianca` | <a href="https://github.com/blasbianca"> <img height="30" alt="GitHub da Bianca" src="https://img.shields.io/badge/-Github-000?style=flat-square&logo=Github&logoColor=white"></a> | [![Github Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/bianca-sosa-b85425127) |
+| `Bianca Sosa` | <a href="https://github.com/blasbianca"> <img height="30" alt="GitHub da Bianca" src="https://img.shields.io/badge/-Github-000?style=flat-square&logo=Github&logoColor=white"></a> | [![Github Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/bianca-sosa-b85425127) |
 
