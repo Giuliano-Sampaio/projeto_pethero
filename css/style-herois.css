@@ -1,5 +1,5 @@
 body {
-  background-color: lightgray;
+  /* background-color: lightgray; */
 
 }
 header, main, footer {
@@ -9,34 +9,84 @@ header, main, footer {
   width: 1280px;
 }
 header {
-  background-color: lightgreen;
+  /* background-color: lightgreen; */
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
 
+#imgLogo {
+  border-radius: 20px;
 }
 main {
-  background-color: lightgoldenrodyellow;
+  /* background-color: lightgoldenrodyellow; */
   margin: 0 auto;
-}
-footer {
-  background-color: lightblue;
-  margin: 0 auto;
-}
-
-main h2 {
- text-align: center;
 }
 section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-
 }
-
-section div {
-  width: 30%;
-  height: 30%;
+h2 {
+  margin: 0;
+  text-align: center;
+  font-size: 2.5em;
 }
-
 section div ul {
   list-style: none;
+}
+.card-icon{
+  /* para-card-list */
+  font-size: 1.6em;
+}
+
+.card-icon {
+  width: 300px;
+  height: 300px;
+  border: 2px solid;
+  border-color: blueviolet;
+  border-radius: 30px;
+  margin: 20px;
+}
+
+.selected h2{
+  margin: 20px;
+}
+
+#imgCardSelected {
+  width: 800px;
+  margin: 0 240px;
+}
+.selected {
+  text-align: center;
+
+}
+
+.selected p, span {
+  font-size: 1.6em;
+}
+h3 {
+  font-size: 2.0em;
+}
+
+#botao-conheca {
+  padding: 20px 0;
+  margin: 0 290px;
+}
+
+button {
+  width: 700px;
+  height: 60px;
+  background-color: lightcoral;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.6em;
+}
+
+footer {
+  /* background-color: lightblue; */
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
