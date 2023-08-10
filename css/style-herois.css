@@ -1,3 +1,27 @@
+body {
+  background-color: lightgray;
+
+}
+header, main, footer {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  width: 1280px;
+}
+header {
+  background-color: lightgreen;
+  margin: 0 auto;
+
+}
+main {
+  background-color: lightgoldenrodyellow;
+  margin: 0 auto;
+}
+footer {
+  background-color: lightblue;
+  margin: 0 auto;
+}
+
 main h2 {
  text-align: center;
 }
