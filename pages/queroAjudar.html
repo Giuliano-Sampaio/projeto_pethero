@@ -1,86 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link href="../css/style.css" rel="stylesheet">
-    <!--          ### Retirando os comentários o style  aparece -->
-    <title>PetHero</title>
-    <style type="text/css">
-        header {
-            font-size: 40px;
-        }
-
-    </style>
-
-
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../css/style.css" rel="stylesheet">
+        <title>PetHero</title>
+        <style type="text/css">
+            header {
+                font-size: 40px;
+            }
+        </style>
     </head>
 
     <body>
         <div class="navbar">
-            <nav>
-                <a href="../index.html">Home</a>
-                <a href="sobreNos.html">Sobre nós</a>
-                <a href="herois.html">Heróis</a>
-                <a href="queroSerUmHeroi.html">Quero ser um Herói</a>
-                <a href="adoteUmPet.html">Adote um Pet</a>
-                <a href="queroAjudar.html">Quero Ajudar</a>
+            <nav style="font-size: larger;">
+                <img src="../img/logoPetHero.png" width="120px" alt="Logo PetHero">
+                <a href="../index.html"><b>Home</b></a>
+                <a href="sobreNos.html"><b>Sobre nós</b></a>
+                <a href="herois.html"><b>Heróis</b></a>
+                <a href="queroSerUmHeroi.html"><b>Quero ser um Herói</b></a>
+                <a href="adoteUmPet.html"><b>Adote um Pet</b></a>
+                <a href="queroAjudar.html"><b>Quero Ajudar</b></a>
             </nav>
-        </div>
-
-        <span>
-
-            <h1>PetHero</h1>
-            <img src="../img/logo-pethero.png" width="150px" alt="Logo PetHero">
-
-        </span>
 
         </div>
+            
+        <main>
+            <h2>Login</h2>        
+            <form action="/login" method="post">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+                <br>
+                <br>
+                <input type="submit" value="Login">    
+                <br>
+                <br>    
+                <a href="rec_senha.html"><b>Esqueceu a senha? | Excluir seus dados</b></a>
+            </form>
+
+            <h2>Cadastre-se</h2>
+            <form action="/cadastro" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <br>
+                <label for="email_cadastro">E-mail</label>
+                <input type="email" id="email_cadastro" name="email_cadastro" placeholder="exemplo@exemplo.com" required>
+                <br>
+                <label for="senha_cadastro">Senha:</label>
+                <input type="password" id="senha_cadastro" name="senha_cadastro" required>
+                <br>
+                <label for="como_quer_ajudar">Como deseja ajudar?:</label>
+                <br>
+                <input type="text" id="como_quer_ajudar" name="como_quer_ajudar" required>
+                <br>
+                <br>
+                <input type="submit" value="Cadastrar">
+                <br>
+                <br>
+            </form>
+        </main>
+
+        <footer>
+            <img src="../img/logoPetHero.png" width="85px"" alt=" Logo pata PetHero">
+            <p class="Copyrigth"> &copy; Copyrigth PetHero - 2023</p>
+        </footer>
+
     </body>
-
-
-    <main>
-        <h2>Login</h2>        
-    <form action="/login" method="post">
-        <label for="email">E-mail</label>
-        <input type="email" id="email" name="email" required>
-        <br>
-        
-        <label for="senha">Senha:</label>
-        <input type="password" id="senha" name="senha" required>
-        <br>
-        <br>
-        <input type="submit" value="Login">        
-    </form>
-
-        <h2>Cadastre-se</h2>
-    <form action="/cadastro" method="post">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required>
-        <br>
-        <label for="email_cadastro">E-mail</label>
-        <input type="email" id="email_cadastro" name="email_cadastro" placeholder="exemplo@exemplo.com" required>
-        <br>
-        <label for="senha_cadastro">Senha:</label>
-        <input type="password" id="senha_cadastro" name="senha_cadastro" required>
-	<br>
-	<label for="como_quer_ajudar">Como deseja ajudar?:</label>
-	<br>
-        <input type="text" id="como_quer_ajudar" name="como_quer_ajudar" required>
-        <br>
-        <br>
-        <input type="submit" value="Cadastrar">
-	<br>
-        <br>
-    </form>
-    </main>
-
-    <footer>
-        <img src="../img/logo-pata-pethero.png" width="40px"" alt=" Logo pata PetHero">
-        <p class="copyrigth">&copy; Copyrigth PetHero - 2023</p>
-    </footer>
 
 </html>
