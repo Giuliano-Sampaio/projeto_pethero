@@ -5,19 +5,21 @@
 }
 
 .navbar {
-    background-color: #00BFFF;
+    background-color: #FFF;
     padding: 10px;
 }
 
 .navbar a {
-    color: #fff;
+    color: #FF8C00;
     text-decoration: none;
-    padding: 8px 16px;
+    padding: 8px 30px;
     position: left;
 }
 
 .navbar a:hover {
-    background-color: #FF8C00;
+    background-color: #00BFFF;
+    color: #FFf;
+    border-radius: 8px;
 }
 
 .grid-container {
@@ -52,6 +54,11 @@
 footer {
     text-align: center;
     padding: 30px ;
+
 }
+
+
+
+
 
 </style>
