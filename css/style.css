@@ -9,6 +9,18 @@
     padding: 10px;
 }
 
+.menu {
+    /*position: fixed; /* Fixa o menu na posição */
+    top: 15px; /* Alinha o menu ao topo da tela */
+    right: 15px; /* Alinha o menu à direita da tela */
+    left: 15px;
+    background-color: #00BFFF;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+  }
 .navbar a {
     color: #FF8C00;
     text-decoration: none;
@@ -50,6 +62,19 @@
     border-radius: 8px;
 }
 
+.img {
+    margin-top: 80px;
+    margin-right: 80px;
+    margin-left: 80px;
+    border-radius: 30px;
+}
+
+.logo {
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
 
 footer {
     text-align: center;
