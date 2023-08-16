@@ -8,80 +8,104 @@
     <link href="../css/style.css" rel="stylesheet">
     <!--          ### Retirando os comentários o style  aparece -->
     <title>PetHero</title>
-    <style type="text/css">
-        header {
-            font-size: 40px;
-        }
 
-    </style>
-
+</head>
 
 <body>
-    </head>
-
-    <body>
+    <header>
+        <img class="navbar-logo" src="../img/logo.png" alt="Logo do Projeto">
         <div class="navbar">
-            <nav>
-                <a href="../index.html">Home</a>
-                <a href="sobreNos.html">Sobre nós</a>
-                <a href="herois.html">Heróis</a>
-                <a href="queroSerUmHeroi.html">Quero ser um Herói</a>
-                <a href="adoteUmPet.html">Adote um Pet</a>
-                <a href="queroAjudar.html">Quero Ajudar</a>
-            </nav>
+                
+            <ul class="navbar-menu">
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="sobreNos.html">Sobre nós</a>
+                </li>
+                <li>
+                    <a href="herois.html">Heróis</a>
+                </li>
+                <li>
+                    <a href="queroSerUmHeroi.html">Quero ser um Herói</a>
+                </li>
+                <li>
+                    <a href="adoteUmPet.html">Adote um Pet</a>
+                </li>
+                <li>
+                    <a href="queroAjudar.html">Quero Ajudar</a>
+                </li>
+            </ul>
         </div>
-
-        <span>
-
-            <h1>PetHero</h1>
-            <img src="../img/logo-pethero.png" width="150px" alt="Logo PetHero">
-
-        </span>
-
-        </div>
-    </body>
-
-
-    <main>
-        
+    </header>
+    
+    <main> 
         <!-- Aqui começa o GRID que agrupa os animais a serem adotados -->
         <div class="grid-container">
             <div class="grid-item">
-                <img src="../img/foto1.png" alt="Animal 1">
-                <h3>Dog01</h3>
-                <button>Saiba Mais</button>
+                <img src="../img/adoteUmPet/dog1.jpg" alt="Animal 1">
+                <h3>Bella</h3>
+                <button onclick="openModal()">Saiba Mais</button>
             </div>
             <div class="grid-item">
-                <img src="../img/foto1.png" alt="Animal 2">
-                <h3>Dog01</h3>
-                <button>Saiba Mais</button>
+                <img src="../img/adoteUmPet/gato2.jpg" alt="Animal 2">
+                <h3>Max</h3>
+                <button onclick="openModal()">Saiba Mais</button>
             </div>
             <div class="grid-item">
-                <img src="../img/foto1.png" alt="Animal 3">
-                <h3>Dog01</h3>
-                <button>Saiba Mais</button>
+                <img src="../img/adoteUmPet/dog3.png" alt="Animal 3">
+                <h3>Lola</h3>
+                <button onclick="openModal()">Saiba Mais</button>
             </div>
             <div class="grid-item">
-                <img src="../img/foto1.png" alt="Animal 4">
-                <h3>Dog01</h3>
-                <button>Saiba Mais</button>
+                <img src="../img/adoteUmPet/dog5.jpg" alt="Animal 4">
+                <h3>Thor</h3>
+                <button onclick="openModal()">Saiba Mais</button>
             </div>
             <div class="grid-item">
-                <img src="../img/foto1.png" alt="Animal 5">
-                <h3>Dog01</h3>
-                <button>Saiba Mais</button>
+                <img src="../img/adoteUmPet/dog4.jpg" alt="Animal 5">
+                <h3>Rocky</h3>
+                <button onclick="openModal()">Saiba Mais</button>
             </div>
             <div class="grid-item">
-                <img src="../img/foto1.png" alt="Animal 6">
-                <h3>Dog01</h3>
-                <button>Saiba Mais</button>
+                <img src="../img/adoteUmPet/dog2.jpg" alt="Animal 6">
+                <h3>Mel</h3>
+                <button onclick="openModal()">Saiba Mais</button>
+            </div>
+            <div class="grid-item">
+                <img src="../img/adoteUmPet/gato1.jpg" alt="Animal 5">
+                <h3>Luna</h3>
+                <button onclick="openModal()">Saiba Mais</button>
+            </div>
+            <div class="grid-item">
+                <img src="../img/adoteUmPet/dog6.jpg" alt="Animal 6">
+                <h3>Toby</h3>
+                <button onclick="openModal()">Saiba Mais</button>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal" id="myModal">
+            <div class="modal-content">
+            <h2>Detalhes do Animal</h2>
+            <p>Aqui estão mais informações sobre o animal.</p>
+            <button onclick="closeModal()">Fechar</button>
             </div>
         </div>
     </main>
 
     <footer>
-        <img src="../img/logo-pata-pethero.png" width="40px"" alt=" Logo pata PetHero">
-        <p class="copyrigth">&copy; Copyrigth PetHero - 2023</p>
+        <a class="copyrigth">&copy; Copyrigth PetHero - 2023</a>
     </footer>
 
+</body>
+<script>
+    function openModal() {
+      document.getElementById("myModal").style.display = "flex";
+    }
+
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+  </script>
 </html>
