@@ -92,10 +92,13 @@ footer {
     padding-right: 30px;
     padding-bottom: 5px;
     padding-left: 30px;
-    background-image: url('dog5.jpg');
 
-    
   }
+
+  /*main {
+    background-image: url(/img/dog5.jpg);
+    background-size: contain; 
+  }*/
 
 .div2 {
     background-color: azure;
