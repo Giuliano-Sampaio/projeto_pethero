@@ -1,0 +1,123 @@
+<style>body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #FFF;
+    padding: 10px;
+}
+
+.menu {
+    position: fixed; /* Fixa o menu na posição */
+    top: 0px; /* Alinha o menu ao topo da tela */
+    right: 0px; /* Alinha o menu à direita da tela */
+    left: 0px;
+    background-color: #FFF;
+    padding-top: 0px;
+    padding-right: 5px;
+    padding-bottom: 0;
+    padding-left: 1px;
+    border-bottom: 5px solid #00BFFF;
+
+
+  }
+
+.navbar a {
+    color: #FF8C00;
+    text-decoration: none;
+    padding: 8px 30px;
+    position: right;
+}
+
+.navbar a:hover {
+    background-color: #00BFFF;
+    color: #FFf;
+    border-radius: 8px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.caixa {
+    background-color: #00BFFF;
+
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+
+    margin-top: 80px;
+    margin-right: 80px;
+    margin-bottom: 80px;
+    margin-left: 80px;
+
+    border-radius: 8px;
+}
+
+.img {
+    margin-top: 0px;
+    margin-right: 180px;
+    margin-left: 80px;
+    width: 1200px;
+    height: 300px;
+
+
+}
+
+.logo {
+    margin-top: 0px;
+    margin-right: 150px;
+
+}
+
+footer {
+    text-align: center;
+    padding: 30px ;
+
+}
+
+.div1 {
+    padding-top: 90px;
+    padding-right: 30px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    background-image: url('dog5.jpg');
+
+    
+  }
+
+.div2 {
+    background-color: azure;
+    color: black;
+}
+
+.div3 {
+    padding-bottom: 5px;
+    background-color: #FFF;
+    color: #FF8C00;
+}
+
+
+
+  .titulo-principal {
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+}
+
+
+
+
+</style>
