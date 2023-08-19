@@ -1,41 +1,58 @@
 <style>
 # {
-    background-color: #dae1e7;
+    background-color: #e5e5e5;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
-    background-color: #dae1e7;
+    background-color:#e5e5e5;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    color: #14213d;
 
     
 }
 
+.fonte1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.fonte2 {
+    font-family: 'Caprasimo', cursive;
+}
 .navbar {
     background-color: #FFF;
     padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: #333; */
+    padding: 10px 20px;
+    color: white;
 }
+
 
 .menu {
     position: fixed; /* Fixa o menu na posição */
     top: 0px; /* Alinha o menu ao topo da tela */
     right: 0px; /* Alinha o menu à direita da tela */
     left: 0px;
-    background-color: #dae1e7;
+    background-color: #e5e5e5;
     border-bottom: 5px solid #00BFFF;
     align-items: center;
     position: right;
-
-
-
+    
   }
 
 .navbar a {
     color: #FF8C00;
     text-decoration: none;
     padding: 8px 30px;
-    position: right;
+    display: ;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+
 
 }
 
@@ -44,6 +61,12 @@ body {
     color: #FFf;
     border-radius: 8px;
 }
+
+.navbar-logo {
+    display: block;
+    width: 80px;
+    height: auto;
+  }
 
 .grid-container {
     display: grid;
@@ -57,21 +80,7 @@ body {
     height: auto;
 }
 
-.caixa {
-    background-color: #00BFFF;
 
-    padding-top: 50px;
-    padding-right: 50px;
-    padding-bottom: 50px;
-    padding-left: 50px;
-
-    margin-top: 80px;
-    margin-right: 80px;
-    margin-bottom: 80px;
-    margin-left: 80px;
-
-    border-radius: 8px;
-}
 
 .img {
     margin-top: 0px;
@@ -79,6 +88,7 @@ body {
     margin-left: 80px;
     width: 1200px;
     height: 300px;
+    border-radius: 8px;
 
 
 }
@@ -86,6 +96,7 @@ body {
 .logo {
     margin-top: 0px;
     margin-right: 150px;
+    
 
 }
 
@@ -96,11 +107,14 @@ footer {
 }
 
 .div1 {
+    font-style: italic;
+    font-weight: 250;
+    font-size: 1.5rem;
     padding-top: 90px;
     padding-right: 30px;
     padding-bottom: 5px;
     padding-left: 30px;
-    background-color: #dae1e7;
+
 
   }
 
@@ -110,16 +124,27 @@ footer {
   }*/
 
 .div2 {
-    background-color: #dae1e7;
-    color: black;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color:#14213d;
+
 }
 
 .div3 {
-    padding-bottom: 5px;
-    background-color: #dae1e7;
+
+    padding-top: 0px;
+    padding-bottom: 0px;
     color: #FF8C00;
 }
 
+.div4 {
+    font-style: italic;
+    font-size: 1.5rem;
+    padding-top: 0px;
+    padding-right: 30px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+}
 
 
   .titulo-principal {
