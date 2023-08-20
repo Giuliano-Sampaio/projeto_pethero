@@ -1,5 +1,5 @@
 <style>
-# {
+* {
     background-color: #e5e5e5;
     font-family: 'Roboto', sans-serif;
 }
@@ -124,7 +124,7 @@ footer {
   }*/
 
 .div2 {
-    padding-top: 0px;
+    padding: 0px;
     padding-bottom: 0px;
     color:#14213d;
 
