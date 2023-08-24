@@ -2,25 +2,11 @@ body {
   /* background-color: lightgray; */
 
 }
-header, main, footer {
+main {
   padding: 0;
   border: 0;
-  margin: 0;
+  margin: 0 auto;
   width: 1280px;
-}
-header {
-  /* background-color: lightgreen; */
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-}
-
-#imgLogo {
-  border-radius: 20px;
-}
-main {
-  /* background-color: lightgoldenrodyellow; */
-  margin: 0 auto;
 }
 section {
   display: flex;
