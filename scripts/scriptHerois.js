@@ -70,3 +70,4 @@ function closeModal() {
           <p>endereço: Rua das Palmas 132 CEP 89230-670</p>
         </div>
       </section> --> */
+
