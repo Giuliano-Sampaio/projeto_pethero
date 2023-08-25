@@ -15,6 +15,14 @@ const herois = [
   {},
   {},
 ];
+/*
+function openModal(idHeroi) {
+  const heroi = herois.find((item)=> {
+    return item.id === Number(idHeroi);
+  })
+  document.getElementById("myModal").style.display = "flex";
+}
+ */
 
 function openModal() {
   document.getElementById("myModal").style.display = "flex";
@@ -23,6 +31,15 @@ function openModal() {
 function closeModal() {
   document.getElementById("myModal").style.display = "none";
 }
+
+/*
+  `Cuidadora ${heroi.nome}`
+  foto ${heroi.fotoModal}
+  heroi.frase
+  heroi.pix
+
+
+*/
 
 /* <!-- <section class="selected">
         <h2>Cuidadora Ana Maria</h2>
