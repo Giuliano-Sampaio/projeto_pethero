@@ -38,6 +38,7 @@ section div ul {
   border-color: blueviolet;
   border-radius: 30px;
   margin: 20px;
+  cursor: pointer;
 }
 
 .selected h2{
@@ -59,20 +60,23 @@ section div ul {
 h3 {
   font-size: 2.0em;
 }
-
-#botao-conheca {
-  padding: 20px 0;
-  margin: 0 290px;
+.container-botao-conheca{
+  margin: 0 auto;
+  width: 1280px;
+  height: 60px;
 }
 
 button {
   width: 700px;
   height: 60px;
+  margin: 0 280px;
+  margin-bottom: 15px;
   background-color: lightcoral;
   color: white;
   border: none;
   border-radius: 10px;
   font-size: 1.6em;
+  cursor: pointer;
 }
 
 footer {
