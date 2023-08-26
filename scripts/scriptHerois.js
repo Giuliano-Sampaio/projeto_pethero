@@ -15,16 +15,18 @@ const herois = [
   {},
   {},
 ];
-/*
+
+
+
+function openModal() {
+  document.getElementById("myModal").style.display = "flex";
+}
+
 function openModal(idHeroi) {
   const heroi = herois.find((item)=> {
     return item.id === Number(idHeroi);
-  })
-  document.getElementById("myModal").style.display = "flex";
-}
- */
-
-function openModal() {
+  });
+  console.log(heroi);
   document.getElementById("myModal").style.display = "flex";
 }
 
@@ -70,4 +72,3 @@ function closeModal() {
           <p>endereço: Rua das Palmas 132 CEP 89230-670</p>
         </div>
       </section> --> */
-
