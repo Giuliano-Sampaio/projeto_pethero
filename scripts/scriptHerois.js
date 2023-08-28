@@ -20,26 +20,27 @@ function openModal(idHeroi) {
   const heroi = herois.find((item)=> {
     return item.id === Number(idHeroi);
   });
-  console.log(heroi);
+
   const objetoHtmlModal = `
   <h2>Cuidadora ${heroi.nome}</h2>
+
   <img id="imgCardSelected" src=${heroi.fotoModal} alt="Foto Cuidadora ${heroi.nome}"/>
   <p>${heroi.frase}</p>
+
   <h3>Faça uma doação</h3>
+
   <p>${heroi.pix}</p>
-  <span>${heroi.nomeCompleto}</span>
-  <span> - </span>
-  <span>${heroi.banco}</span>
+
+  <p>${heroi.nomeCompleto} - ${heroi.banco}</p>
+
   <p>ou compareça ao local para serviço volutário</p>
-  <span>cidade: ${heroi.cidade}</span>
-  <span> - </span>
-  <span>contato: ${heroi.contato}</span>
-  <span> - </span>
-  <span>${heroi.contatoTipo}</span>
+
+  <p>cidade: ${heroi.cidade} - contato: ${heroi.contato} - ${heroi.contatoTipo}</p>
+  
   <p>endereço: ${heroi.endereco}</p>
-  `
-  document.getElementById("section-modal-content").innerHTML = objetoHtmlModal;
-  document.getElementById("myModal").style.display = "flex";
+  `;
+  document.getElementById("container-modal-content").innerHTML = objetoHtmlModal;
+  document.getElementById("myModal").style.display = "block";
 }
 
 function closeModal() {

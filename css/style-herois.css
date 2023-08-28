@@ -31,13 +31,8 @@ section div ul {
   margin: 20px;
   cursor: pointer;
 }
-.selected h2 {
-  margin: 20px;
-}
-#imgCardSelected {
-  width: 800px;
-  margin: 0 240px;
-}
+
+
 .selected {
   text-align: center;
 }
@@ -53,10 +48,9 @@ h3 {
   height: 60px;
 }
 button {
-  width: 700px;
+  width: 70%;
   height: 60px;
-  margin: 0 280px;
-  margin-bottom: 15px;
+  margin: 0 auto;
   background-color: lightcoral;
   color: white;
   border: none;
@@ -64,3 +58,18 @@ button {
   font-size: 1.6em;
   cursor: pointer;
 }
+
+/* .modal {} */
+
+.modal-content {
+  width: 80vw;
+  margin: 10vh auto;
+}
+.selected {
+  width: 80%;
+}
+#imgCardSelected {
+  width: 80%;
+  margin: 0 auto;
+}
+/* .modal-content button {} */
