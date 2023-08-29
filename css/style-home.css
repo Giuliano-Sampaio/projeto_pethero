@@ -1,12 +1,13 @@
 <style>
 * {
-    background-color: #e5e5e5;
+    background-color: #dce6f2;
     font-family: 'Roboto', sans-serif;
 }
 
 header {
     position: fixed;
-    background-color: #e5e5e5;
+    /*background-color: #e5e5e5;*/
+    background-color: #dce6f2;
     display: flex;
     height: 80px;
     font-size: 1.1rem;
@@ -14,11 +15,12 @@ header {
     margin-right: 40px;
     height: 89px;
     justify-content: space-around;
+    border-bottom: 3px solid #00BFFF;
     
   }
 
 body {
-    background-color:#e5e5e5;
+    background-color:#dce6f2;
     margin: 0;
     padding: 0;
     color: #14213d;
@@ -124,6 +126,8 @@ body {
     width: 650px;
     height: 400px;
     border-radius: 8px;
+    border-bottom: 4px solid #00BFFF;
+    border-right: 3px solid #00BFFF ;
 }
 
 .img2 {
@@ -133,6 +137,8 @@ body {
     width: 650px;
     height: 400px;
     border-radius: 8px;
+    border-bottom: 4px solid #00BFFF;
+    border-left: 3px solid #00BFFF ;
 }
 
 
@@ -143,9 +149,13 @@ body {
 
 }
 
+
 footer {
     text-align: center;
-    padding: 30px ;
+    padding: 15px ;
+    background-color: #dce6f2;
+    color: #14213d;
+
 
 }
 
