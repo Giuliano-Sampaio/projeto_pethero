@@ -4,6 +4,19 @@
     font-family: 'Roboto', sans-serif;
 }
 
+header {
+    position: fixed;
+    background-color: #e5e5e5;
+    display: flex;
+    height: 80px;
+    font-size: 1.1rem;
+    width: 100vw;
+    margin-right: 40px;
+    height: 89px;
+    justify-content: space-around;
+    
+  }
+
 body {
     background-color:#e5e5e5;
     margin: 0;
@@ -20,17 +33,36 @@ body {
 .fonte2 {
     font-family: 'Caprasimo', cursive;
 }
-.navbar {
+/*.navbar {
     background-color: #FFF;
     padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: #333; 
+    padding: 10px 20px;
+    color: white;
+}*/
+.navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     /* background-color: #333; */
     padding: 10px 20px;
     color: white;
-}
+  }
 
+  .navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar-menu li {
+    padding: 0;
+    margin: 0;
+  }
+  
 
 .menu {
     position: fixed; /* Fixa o menu na posição */
@@ -45,13 +77,15 @@ body {
   }
 
 .navbar a {
-    color: #FF8C00;
+    color: #fff;
     text-decoration: none;
     padding: 8px 30px;
     display: ;
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
+    background-color: #FF8C00;
+    border-radius: 50px;
 
 
 }
@@ -59,13 +93,14 @@ body {
 .navbar a:hover {
     background-color: #00BFFF;
     color: #FFf;
-    border-radius: 8px;
+    border-radius: 50px;
 }
 
 .navbar-logo {
     display: block;
-    width: 80px;
+    width: 95px;
     height: auto;
+    margin-left: 20px;
   }
 
 .grid-container {
@@ -102,7 +137,7 @@ body {
 
 
 .logo {
-    margin-top: 0px;
+    margin-top: 10px;
     margin-right: 150px;
     
 
