@@ -48,73 +48,70 @@
           </ul>
         </div>
 
-        <div class="card-icon" id="1" value="1">
-          <img src="../img/cuidaM1.jpeg" alt="Foto Cuidadora Ana Paula" />
+        <div class="card-icon">
+          <img
+            id="heroi01"
+            value="1"
+            src="../img/cuidaM1.jpeg"
+            alt="Foto Cuidadora Ana Paula"
+            onclick="openModal(1)"
+          />
         </div>
 
-        <div class="card-icon" id="2" value="2">          
-            <img src="../img/cuidaM3.jpeg" alt="Foto Cuidadora Beatris" />          
+        <div class="card-icon" id="heroi02" value="2">
+          <img
+            src="../img/cuidaM3.jpeg"
+            alt="Foto Cuidadora Beatris"
+            onclick="openModal(2)"
+          />
         </div>
 
-        <div class="card-icon" id="3" value="3">          
-            <img src="../img/cuidaH3.jpeg" alt="Foto Cuidadora Claudio Pit-bull"/>          
+        <div class="card-icon" id="heroi03" value="3">
+          <img
+            src="../img/cuidaH3.jpeg"
+            alt="Foto Cuidadora Claudio Pit-bull"
+            onclick="openModal(3)"
+          />
         </div>
 
-        <div class="card-icon" id="4" value="4">          
-            <img src="../img/cuidaM1.jpeg" alt="Foto Cuidadora Ana Paula" />          
+        <div class="card-icon" id="heroi04" value="4">
+          <img
+            src="../img/cuidaM1.jpeg"
+            alt="Foto Cuidadora Ana Paula"
+            onclick="openModal(4)"
+          />
         </div>
 
-        <div class="card-icon" id="5" value="5">          
-            <img src="../img/cuidaM3.jpeg" alt="Foto Cuidadora Beatris" />          
+        <div class="card-icon" id="heroi05" value="5">
+          <img
+            src="../img/cuidaM3.jpeg"
+            alt="Foto Cuidadora Beatris"
+            onclick="openModal(5)"
+          />
         </div>
 
-        <div class="card-icon" id="6" value="6">          
-            <img src="../img/cuidaH3.jpeg" alt="Foto Cuidadora Claudio Pit-bull" />          
+        <div class="card-icon" id="heroi06" value="6">
+          <img
+            src="../img/cuidaH3.jpeg"
+            alt="Foto Cuidadora Claudio Pit-bull"
+            onclick="openModal(6)"
+          />
         </div>
-
       </section>
 
-      <div id="botao-conheca">
-        <button onclick="openModal()">
-          Conheça nossos Pets disponiveis para adoção
-        </button>
+      <div class="container-botao-conheca">
+        <button>Conheça nossos Pets disponiveis para adoção</button>
       </div>
       <!-- Modal -->
       <div class="modal" id="myModal">
         <div class="modal-content">
-          <section class="selected">
-            <h2>Cuidadora Ana Maria</h2>
-            <div class="card-selected">
-              <img
-                id="imgCardSelected"
-                src="../img/abrigo1000x500.jpeg"
-                alt="Foto Cuidadora Ana Paula"
-              />
-              <p>
-                “Minha vida é lutar pelos animais que são abandonados a propria
-                sorte,<br />
-                para mim eles são anjinhos que não falam a nossa lingua mas
-                estão nesse<br />
-                mundo apenas para nos dar amor. Se vc se identifica com essa
-                causa<br />
-                Junte-se a mim.”
-              </p>
-
-              <h3>Faça uma doação</h3>
-              <p>Pix CPF: 055.999.555-99</p>
-              <span>Ana Paula Moreira</span>
-              <span> - </span>
-              <span>Banco do Brasil</span>
-              <p>ou compareça ao local para serviço volutário</p>
-              <span>cidade: </span>
-              <span>Joinville/SC</span>
-              <p>endereço: Rua das Palmas 132 CEP 89230-670</p>
-            </div>
-          </section>
-
-          <button onclick="closeModal()">Fechar</button>
+          <div class="selected" id="container-modal-content"></div>
+          <div class="container-button">
+            <button onclick="closeModal()">Fechar</button>
+          </div>
         </div>
       </div>
+      <!-- FIM Modal -->
     </main>
 
     <!-- FIM -->

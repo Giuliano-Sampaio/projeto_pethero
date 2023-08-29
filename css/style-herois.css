@@ -1,7 +1,3 @@
-body {
-  /* background-color: lightgray; */
-
-}
 main {
   padding: 0;
   border: 0;
@@ -18,19 +14,14 @@ h2 {
   text-align: center;
   font-size: 2.5em;
 }
-
 #card-list {
   text-align: center;
   padding: 7%;
+  font-size: 1.6em;
 }
 section div ul {
   list-style: none;
 }
-.card-icon{
-  /* para-card-list */
-  font-size: 1.6em;
-}
-
 .card-icon img {
   width: 300px;
   height: 300px;
@@ -38,46 +29,47 @@ section div ul {
   border-color: blueviolet;
   border-radius: 30px;
   margin: 20px;
+  cursor: pointer;
 }
 
-.selected h2{
-  margin: 20px;
-}
 
-#imgCardSelected {
-  width: 800px;
-  margin: 0 240px;
-}
 .selected {
   text-align: center;
-
 }
-
 .selected p, span {
   font-size: 1.6em;
 }
 h3 {
-  font-size: 2.0em;
+  font-size: 2em;
 }
-
-#botao-conheca {
-  padding: 20px 0;
-  margin: 0 290px;
-}
-
-button {
-  width: 700px;
+.container-botao-conheca {
+  margin: 0 auto;
+  width: 1280px;
   height: 60px;
+}
+button {
+  width: 70%;
+  height: 60px;
+  margin: 0 auto;
   background-color: lightcoral;
   color: white;
   border: none;
   border-radius: 10px;
   font-size: 1.6em;
+  cursor: pointer;
 }
 
-footer {
-  /* background-color: lightblue; */
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
+/* .modal {} */
+
+.modal-content {
+  width: 80vw;
+  margin: 10vh auto;
 }
+.selected {
+  width: 80%;
+}
+#imgCardSelected {
+  width: 80%;
+  margin: 0 auto;
+}
+/* .modal-content button {} */
