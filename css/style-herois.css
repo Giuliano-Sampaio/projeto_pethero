@@ -35,6 +35,7 @@ section div ul {
 
 .selected {
   text-align: center;
+  margin: 0 auto;
 }
 .selected p, span {
   font-size: 1.6em;
@@ -45,12 +46,14 @@ h3 {
 .container-botao-conheca {
   margin: 0 auto;
   width: 1280px;
-  height: 60px;
+  height: 100px;
 }
-button {
-  width: 70%;
+
+button, #botaoConheca {
+  width: 100%;
   height: 60px;
   margin: 0 auto;
+  line-height: 60px;
   background-color: lightcoral;
   color: white;
   border: none;
@@ -59,17 +62,16 @@ button {
   cursor: pointer;
 }
 
-/* .modal {} */
-
 .modal-content {
   width: 80vw;
-  margin: 10vh auto;
+  height: 90vh;
+  margin: 30px auto;
 }
 .selected {
   width: 80%;
 }
 #imgCardSelected {
-  width: 80%;
+  width: 100%;
+  max-width: 830px;
   margin: 0 auto;
 }
-/* .modal-content button {} */

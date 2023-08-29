@@ -39,81 +39,19 @@
     <main>
       <h2>Cuidadoras Independentes Cadastradas</h2>
 
-      <section class="cards">
-        <div class="card-icon" id="card-list">
-          <ul>
-            <li>Ana Paula</li>
-            <li>Beatris</li>
-            <li>Claudio Pit-bull</li>
-          </ul>
-        </div>
-
-        <div class="card-icon">
-          <img
-            id="heroi01"
-            value="1"
-            src="../img/cuidaM1.jpeg"
-            alt="Foto Cuidadora Ana Paula"
-            onclick="openModal(1)"
-          />
-        </div>
-
-        <div class="card-icon" id="heroi02" value="2">
-          <img
-            src="../img/cuidaM3.jpeg"
-            alt="Foto Cuidadora Beatris"
-            onclick="openModal(2)"
-          />
-        </div>
-
-        <div class="card-icon" id="heroi03" value="3">
-          <img
-            src="../img/cuidaH3.jpeg"
-            alt="Foto Cuidadora Claudio Pit-bull"
-            onclick="openModal(3)"
-          />
-        </div>
-
-        <div class="card-icon" id="heroi04" value="4">
-          <img
-            src="../img/cuidaM1.jpeg"
-            alt="Foto Cuidadora Ana Paula"
-            onclick="openModal(4)"
-          />
-        </div>
-
-        <div class="card-icon" id="heroi05" value="5">
-          <img
-            src="../img/cuidaM3.jpeg"
-            alt="Foto Cuidadora Beatris"
-            onclick="openModal(5)"
-          />
-        </div>
-
-        <div class="card-icon" id="heroi06" value="6">
-          <img
-            src="../img/cuidaH3.jpeg"
-            alt="Foto Cuidadora Claudio Pit-bull"
-            onclick="openModal(6)"
-          />
-        </div>
-      </section>
+      <section class="cards" id="cards"></section>
 
       <div class="container-botao-conheca">
-        <button>Conheça nossos Pets disponiveis para adoção</button>
+        <a href="adoteUmPet.html" id="botaoConheca">Conheça nossos Pets disponiveis para adoção</a>
       </div>
       <!-- Modal -->
       <div class="modal" id="myModal">
         <div class="modal-content">
           <div class="selected" id="container-modal-content"></div>
-          <div class="container-button">
-            <button onclick="closeModal()">Fechar</button>
-          </div>
         </div>
       </div>
       <!-- FIM Modal -->
     </main>
-
     <!-- FIM -->
     <footer>
       <a class="copyrigth">&copy; Copyrigth PetHero - 2023</a>
