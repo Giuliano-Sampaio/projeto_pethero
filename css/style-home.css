@@ -30,10 +30,13 @@ body {
 
 .fonte1 {
     font-family: 'Roboto', sans-serif;
+
 }
 
 .fonte2 {
     font-family: 'Caprasimo', cursive;
+
+ 
 }
 /*.navbar {
     background-color: #FFF;
@@ -121,10 +124,10 @@ body {
 
 .img {
     margin-top: 150px;
-    margin-right: 60px;
+    margin-right: 10px;
     margin-left: 60px;
-    width: 650px;
-    height: 400px;
+    width: 600px;
+    height: 350px;
     border-radius: 8px;
     border-bottom: 4px solid #00BFFF;
     border-right: 3px solid #00BFFF ;
@@ -134,8 +137,8 @@ body {
     margin-top: 40px;
     margin-right: 60px;
     margin-left: 60px;
-    width: 650px;
-    height: 400px;
+    width: 600px;
+    height: 350px;
     border-radius: 8px;
     border-bottom: 4px solid #00BFFF;
     border-left: 3px solid #00BFFF ;
@@ -177,26 +180,25 @@ footer {
 
 
 .div2 {
-    padding: 0px;
-    padding-bottom: 0px;
-    color:#14213d;
-
+    color: #FF8C00;
+    margin-bottom: -3px;
 }
 
-.div3 {
 
-    padding-top: 0px;
-    padding-bottom: 0px;
-    color: #FF8C00;
+.div3 {
+    margin-top: -8px;
+    color: #00BFFF;
+
 }
 
 .div4 {
     font-style: italic;
     font-size: 1.5rem;
     padding-top: 0px;
-    padding-right: 30px;
+    padding-right: 50px;
     padding-bottom: 5px;
-    padding-left: 30px;
+    padding-left: 50px;
+
 }
 
 
@@ -211,19 +213,31 @@ footer {
     font-style: italic;
     font-weight: 250;
     font-size: 1.9rem;
+    padding-top: 5px;
+    padding-right: 30px;
+    padding-bottom:30px;
+}
+
+
+.text2 {
+    font-style: italic;
+    font-weight: 250;
+    font-size: 1.9rem;
     padding-top: 40px;
     padding-right: 60px;
     padding-bottom: 5px;
     padding-left: 60px;
 } 
 
-.text2 {
+.text3 {
     font-style: italic;
     font-weight: 250;
-    font-size: 1.9rem;
-    padding: 10px;
+    font-size: 1.8rem;
+    padding-top: 5px;
+    padding-right: 60px;
+    padding-bottom: 50px;
+    padding-left: 60px;
 } 
-
 
 
 
