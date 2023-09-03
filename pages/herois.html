@@ -42,19 +42,30 @@
       <section class="cards" id="cards"></section>
 
       <div class="container-botao-conheca">
-        <a href="adoteUmPet.html" id="botaoConheca">Conheça nossos Pets disponiveis para adoção</a>
+        <a href="adoteUmPet.html" id="botaoConheca"
+          >Conheça nossos Pets disponiveis para adoção</a
+        >
       </div>
+
       <!-- Modal -->
-      <div class="modal" id="myModal">
+      <dialog class="modal" id="myModal">
         <div class="modal-content">
-          <div class="selected" id="container-modal-content"></div>
+          <div class="selected" id="container-modal-content">
+
+          </div>
         </div>
-      </div>
+      </dialog>
       <!-- FIM Modal -->
     </main>
     <!-- FIM -->
     <footer>
       <a class="copyrigth">&copy; Copyrigth PetHero - 2023</a>
     </footer>
+    <script>
+      function opeMo(){
+        const modal = document.querySelector("dialog")
+        modal.showModal();
+      }
+    </script>
   </body>
 </html>

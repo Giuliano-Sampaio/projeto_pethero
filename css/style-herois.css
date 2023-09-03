@@ -32,7 +32,12 @@ section div ul {
   cursor: pointer;
 }
 
-
+dialog{
+  border: none;
+  margin: 0 auto;
+  padding: 10px 0;
+  border-radius: 20px;
+}
 .selected {
   text-align: center;
   margin: 0 auto;
@@ -46,11 +51,11 @@ h3 {
 .container-botao-conheca {
   margin: 0 auto;
   width: 1280px;
-  height: 100px;
+  height: 200px;
 }
 
 button, #botaoConheca {
-  width: 100%;
+  width: 90%;
   height: 60px;
   margin: 0 auto;
   line-height: 60px;
@@ -63,8 +68,8 @@ button, #botaoConheca {
 }
 
 .modal-content {
-  width: 80vw;
-  height: 90vh;
+  width: 75vw;
+  height: 80vh;
   margin: 30px auto;
 }
 .selected {
