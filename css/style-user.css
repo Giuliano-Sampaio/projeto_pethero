@@ -85,7 +85,7 @@ footer {
 
 }
 
-.icone-editar { /*style.css não contém*/
+#icone-editar { /*style.css não contém*/
     display: block;
     width: 13px;
     height: auto;
@@ -106,7 +106,7 @@ footer {
     border: 1px solid #ccc;
     padding: 20px;
     text-align: center;
-    width: 20%;
+    width: 30%;
   }
   
   .grid-item img {
@@ -120,7 +120,7 @@ footer {
   }
   
   .grid-item button {
-    background-color: #e84118;
+    background-color: #487eb0;;
     color: white;
     border: none;
     padding: 5px 10px;
