@@ -39,7 +39,7 @@
     margin: 0;
   }
   
-  .navbar-menu a {
+  .navbar-menu a { /*diferente do  style.css*/
     text-decoration: none;
     color: white;
     display: block;
@@ -83,4 +83,14 @@ footer {
     position: fixed;
     width: 100%;
 
+}
+
+.icone-editar { /*style.css não contém*/
+    display: block;
+    width: 13px;
+    height: auto;
+  }
+
+.container { /*style.css não contém*/
+    display: flex;
 }
