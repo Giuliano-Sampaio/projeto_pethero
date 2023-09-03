@@ -84,3 +84,66 @@ footer {
     width: 100%;
 
 }
+
+.icone-editar { /*style.css não contém*/
+    display: block;
+    width: 13px;
+    height: auto;
+  }
+
+.container { /*style.css não contém*/
+    display: flex;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .grid-item {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    width: 20%;
+  }
+  
+  .grid-item img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+  }
+  
+  .grid-item h3 {
+    margin-top: 10px;
+  }
+  
+  .grid-item button {
+    background-color: #e84118;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+
+  /* Estilos para o modal */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+  }
+
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+  }
+
