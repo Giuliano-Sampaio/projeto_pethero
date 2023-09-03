@@ -42,9 +42,6 @@
   .navbar-menu a {
     text-decoration: none;
     color: white;
-  }
-  
-  a {
     display: block;
     width: auto;
     height: auto;
@@ -58,7 +55,9 @@
     text-align: center;
     font-weight: bold;
     font-family: Arial;
-    }
+  }
+  
+
 
     .navbar a:hover {
       background-color: #FF8C00;
