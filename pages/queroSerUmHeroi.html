@@ -35,7 +35,7 @@
                     <a href="adoteUmPet.html">Adote um Pet</a>
                 </li>
                 <li>
-                    <a href="queroAjudar.html">Quero Ajudar</a>
+                    <a href="queroAjudar.html">Login</a>
                 </li>
             </ul>
         </div>
@@ -55,13 +55,16 @@
                 <form>
                     <fieldset class="Grupo">
                         <div class = "Campo">
-                        <label for="Nome Completo"><strong>Nome Completo:*</strong></label>
+                        <label class="obrigatorios" for="nome"><strong>Nome Completo:*</strong></label>
+                    
                         <input type="text" name="nome" id="nome" required>
                         </div class = "Campo">
                         <div class = "Campo">
-                        <label for="Data de Nascimento:"><strong>Data de Nascimento:*</strong></label>
+                        <label class= "obrigatorios" for="numero"><strong>Data de Nascimento:*</strong></label>
                         <input type="number" name="numero" id="numero" required>
                         </div class = "Campo">
+
+                        
             
                         <div class = "Campo">
                         <label for="Estado">Estado:</label>
@@ -76,13 +79,25 @@
                     </fieldset>
                     <fieldset>
                     <div class = "Campo">
-                        <label for="E-mail"><strong>E-mail:*</strong></label>
-                        <input type="email" name="email" id="email" required>
+                        <label class = "obrigatorios" for="E-mail"><strong>E-mail:*</strong></label>
+                        <input  type="email" name="email" id="email" required>
                     </fieldset>
+
+                    <fieldset>
+                        <div class = "Campo">
+                            <label class = "obrigatorios" for="senha"><strong>Senha:*</strong></label>
+                            <input  type="password" name="senha" id="senha" required>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class = "Campo">
+                                <label class = "obrigatorios" for="confirme_senha"><strong>Confirme senha:*</strong></label>
+                                <input  type="password" name="confirme_senha" id="confirme_senha" required>
+                            </fieldset>
             
                     <fieldset>
                         <div class = "Campo">
-                            <label for="Telefone"><strong>Telefone:*</strong></label>
+                            <label class = "obrigatorios" for="Telefone"><strong>Telefone:*</strong></label>
                             <input type="Telefone" name="Telefone" id="Telefone" required>
                         </fieldset>
                     </div class = "Campo">
@@ -125,7 +140,7 @@
                         </fieldset class = "Grupo">
                         </div class = "Campo">
             
-                        <label><strong>*Campo Obrigatório</strong></label>
+                        <label class = "obrigatorios"><strong>*Campo Obrigatório</strong></label>
                          
                 
             
