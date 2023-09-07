@@ -31,7 +31,8 @@ body{
 
 button{
   color: #487eb0;
-  border-radius: 2px;
-   
+  border-radius: 6px;
+  border: 1px solid #FF8C00;
 }
+
 
