@@ -7,7 +7,11 @@ main {
 @media( 1024px<= width < 1280px ) {
   main{
     width: 1024px;
-
+  }
+}
+@media( 768px<= width < 1024px ) {
+  main{
+    width: 768px;
   }
 }
 section {
@@ -20,6 +24,11 @@ h2 {
   text-align: center;
   font-size: 2.5em;
 }
+@media( 768px<= width < 1024px ) {
+  h2 {
+    font-size: 2.0em;
+  }
+}
 #card-list {
   text-align: center;
   padding: 7%;
@@ -28,6 +37,11 @@ h2 {
 @media( 1024px<= width < 1280px ) {
   #card-list {
     padding: 8%;
+  }
+}
+@media( 768px<= width < 1024px ) {
+  #card-list {
+    font-size: 1.2em;
   }
 }
 section div ul {
@@ -47,6 +61,14 @@ section div ul {
     margin: 15px;
   }
 }
+@media( 768px<= width < 1024px ) {
+  .card-icon img {
+    width: 220px;
+    height: 220px;
+    border: 1.5px solid;
+    margin: 15px;
+  }
+}
 dialog{
   border: none;
   margin: 0 auto;
@@ -60,8 +82,18 @@ dialog{
 .selected p, span {
   font-size: 1.6em;
 }
+@media( 768px<= width < 1024px ) {
+  .selected p, span {
+    font-size: 1.2em;
+  }
+}
 h3 {
   font-size: 2em;
+}
+@media( 768px<= width < 1024px ) {
+  h3 {
+    font-size: 1.6em;
+  }
 }
 .container-botao-conheca {
   margin: 0 auto;
@@ -71,7 +103,13 @@ h3 {
 @media( 1024px<= width < 1280px ) {
   .container-botao-conheca {
     width: 1024px;
-    height: 100px;
+    height: 180px;
+  }
+}
+@media( 768px<= width < 1024px ) {
+  .container-botao-conheca {
+    width: 768px;
+    height: 180px;
   }
 }
 
@@ -87,11 +125,22 @@ button, #botaoConheca {
   font-size: 1.6em;
   cursor: pointer;
 }
+@media( 768px<= width < 1024px ) {
+  button, #botaoConheca {
+    height: 50px;
+    line-height: 50px;
+  }
+}
 
 .modal-content {
   width: 75vw;
   height: 80vh;
   margin: 30px auto;
+}
+@media( 768px<= width < 1024px ) {
+  .modal-content {
+    margin-top: 10px;
+  }
 }
 .selected {
   width: 80%;
