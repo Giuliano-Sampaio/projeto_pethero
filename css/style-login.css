@@ -4,7 +4,7 @@
     padding: 0;
   }
 
-  header {
+  /* header {
     background-color: #487eb0;
     display: flex;
     justify-content: space-between;
@@ -16,9 +16,9 @@
   .navbar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; */
     /* background-color: #333; */
-    padding: 10px 20px;
+    /* padding: 10px 20px;
     color: white;
   }
   
@@ -37,9 +37,9 @@
   .navbar-menu li {
     padding: 0;
     margin: 0;
-  }
+  } */
   
-  .navbar-menu a { /*diferente do  style.css*/
+  /* .navbar-menu a { diferente do  style.css
     text-decoration: none;
     color: white;
     display: block;
@@ -47,10 +47,10 @@
     height: auto;
     line-height: 50px;
     padding: 10px 5px;
-    margin: 5px;
-    /* background-color: #000; */
+    margin: 5px; */
+    /* background-color: #000; 
     color: #FFF;
-    /* border-radius: 5px; */
+    /* border-radius: 5px; 
     text-decoration: none;
     text-align: center;
     font-weight: bold;
@@ -63,7 +63,7 @@
       background-color: #FF8C00;
       
       
-      /* border-radius: 8px; */
+      /* border-radius: 8px; *
   }
 
  
@@ -83,15 +83,6 @@
   border-radius: 20px;
 }
 
-footer {
-    text-align: center;
-    /* padding: 30px ; */
-    background-color: #487eb0;
-    bottom: 0;
-    position: fixed;
-    width: 100%;
-
-}
 
 button {
   background-color: #487eb0;;
@@ -102,4 +93,101 @@ button {
 
 h2 {
   color: #FF8C00;
-}
+}*/
+
+        /* Adicione seu CSS personalizado aqui */
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f2f2f2;
+      }
+
+      header {
+          background-color: #007BFF;
+          color: #fff;
+          text-align: center;
+          padding: 10px 0;
+      }
+
+      .navbar-logo {
+          width: 100px; /* Ajuste o tamanho do logotipo conforme necessário */
+      }
+
+      .navbar {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+      }
+
+      .navbar-menu {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+          display: flex;
+      }
+
+      .navbar-menu li {
+          margin: 0 10px;
+      }
+
+      .navbar-menu a {
+          text-decoration: none;
+          color: #fff;
+      }
+
+      main {
+          max-width: 800px;
+          margin: 0 auto;
+          padding: 20px;
+          background-color: #fff;
+          border-radius: 10px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      #div1 {
+          text-align: center;
+      }
+
+      h2 {
+          margin-bottom: 20px;
+      }
+
+      form {
+          display: flex;
+          flex-direction: column;
+      }
+
+      label {
+          font-weight: bold;
+      }
+
+      input[type="email"],
+      input[type="password"] {
+          padding: 10px;
+          margin: 5px 0;
+      }
+
+      button {
+          background-color: #007BFF;
+          color: #fff;
+          padding: 10px;
+          border: none;
+          cursor: pointer;
+      }
+
+      button:hover {
+          background-color: #0056b3;
+      }
+
+      h5 {
+          text-align: center;
+          margin-top: 20px;
+      }
+
+      footer {
+          text-align: center;
+          background-color: #007BFF;
+          color: #fff;
+          padding: 10px 0;
+      }

@@ -7,6 +7,14 @@
 
     <link href="../css/style.css" rel="stylesheet">
     <link href="../css/style-adote.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,300;1,400;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Roboto:ital,wght@1,900&display=swap"
+        rel="stylesheet">
     <!--          ### Retirando os comentários o style  aparece -->
     <title>PetHero</title>
 
@@ -14,28 +22,15 @@
 
 <body>
     <header>
-        <img class="navbar-logo" src="../img/logo.png" alt="Logo do Projeto">
+        <a href="../index.html"><img class="navbar-logo" src="../img/logo.png" alt="Logo do Projeto"></a>
         <div class="navbar">
-                
             <ul class="navbar-menu">
-                <li>
-                    <a href="../index.html">Home</a>
-                </li>
-                <li>
-                    <a href="sobreNos.html">Sobre nós</a>
-                </li>
-                <li>
-                    <a href="herois.html">Heróis</a>
-                </li>
-                <li>
-                    <a href="queroSerUmHeroi.html">Quero ser um Herói</a>
-                </li>
-                <li>
-                    <a href="adoteUmPet.html">Adote um Pet</a>
-                </li>
-                <li>
-                    <a href="queroAjudar.html">Quero Ajudar</a>
-                </li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="sobreNos.html">Sobre nós</a></li>
+                <li><a href="herois.html">Heróis</a></li>
+                <li><a href="queroSerUmHeroi.html">Quero ser um Herói</a></li>
+                <li><a href="adoteUmPet.html">Adote um Pet</a></li>
+                <li><a href="queroAjudar.html">Login</a></li>
             </ul>
         </div>
     </header>
@@ -46,7 +41,7 @@
             <div class="grid-item">
                 <img src="../img/adoteUmPet/dog1.jpg" alt="Animal 1">
                 <h3>Bella</h3>
-                <button onclick="openModal()">Saiba Mais</button>
+                <button dog-nome="Bella" onclick="openModal()">Saiba Mais</button>
             </div>
             <div class="grid-item">
                 <img src="../img/adoteUmPet/gato2.jpg" alt="Animal 2">
@@ -89,7 +84,9 @@
         <div class="modal" id="myModal">
             <div class="modal-content">
             <h2>Detalhes do Animal</h2>
-            <p>Aqui estão mais informações sobre o animal.</p>
+            <p><strong>Nome:</strong> <span id="dog-name"></span></p>
+            <p><strong>Idade:</strong> <span id="dog-age"></span></p>
+            <p><strong>Raça:</strong> <span id="dog-race"></span></p>
             <button onclick="closeModal()">Fechar</button>
             </div>
         </div>
@@ -102,11 +99,57 @@
 </body>
 <script>
     function openModal() {
-      document.getElementById("myModal").style.display = "flex";
+      document.getElementById("myModal").style.display = "block";
     }
 
     function closeModal() {
       document.getElementById("myModal").style.display = "none";
     }
+
+         // Elementos do modal e botões
+         //var modal = document.getElementById("myModal");
+         //var modalContent = document.getElementById("modal-content-text");
+         //var closeBtn = document.querySelector(".close");
+         //var dogName = document.getElementById("dog-name");
+         //var dogAge = document.getElementById("dog-age");
+         //var dogRace = document.getElementById("dog-race");
+ 
+         // Botões que abrem o modal
+         //var showModalButtons = document.querySelectorAll(".show-modal");
+ 
+         // Adicionar evento de clique para cada botão
+         //showModalButtons.forEach(function(button) {
+         //    button.addEventListener("click", function() {
+        //         var nome = this.getAttribute("data-nome");
+        //         var idade = this.getAttribute("data-idade");
+       //          var raca = this.getAttribute("data-raca");
+                 
+       //          dogName.textContent = nome;
+       //          dogAge.textContent = idade;
+        //         dogRace.textContent = raca;
+ 
+        //         modal.style.display = "block";
+        //     });
+        // });
+ 
+         // Fechar o modal quando o botão "Fechar" é clicado ou fora do modal
+        // closeBtn.addEventListener("click", function() {
+         //    modal.style.display = "none";
+        // });
+ 
+        // window.addEventListener("click", function(event) {
+        //     if (event.target == modal) {
+         ///        modal.style.display = "none";
+          //   }
+        // });
+        
+        function toggleMobileMenu() {
+            const navbarMenuMobile = document.querySelector(".navbar-menu-mobile");
+            navbarMenuMobile.classList.toggle("active");
+        }
+        
+
+        
+        
   </script>
 </html>

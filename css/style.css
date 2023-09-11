@@ -4,46 +4,62 @@
     padding: 0;
   }
 
+/* Estilos gerais para o cabeçalho */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #487eb0;
+  color: #fff;
+}
+
+.navbar-logo {
+  max-width: 4rem;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.navbar-menu li {
+  margin-right: 20px; /* Adicione um espaçamento entre os itens do menu */
+}
+
+.navbar-menu a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+/* Estilos específicos para telas pequenas e móveis */
+@media (max-width: 768px) {
   header {
-    background-color: #487eb0;
-    display: flex;
-    justify-content: space-between;
-    padding: 16px;
-    margin-bottom: 16px;
-    height: 40px;
+      flex-direction: column;
+      text-align: center;
   }
 
   .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* background-color: #333; */
-    padding: 10px 20px;
-    color: white;
+      margin-top: 20px; /* Adicione margem acima da navbar */
   }
-  
-  .navbar-logo {
-    display: block;
-    width: 80px;
-    height: auto;
-  }
-  
+
   .navbar-menu {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+      flex-direction: column;
   }
-  
+
   .navbar-menu li {
-    padding: 0;
-    margin: 0;
+      margin: 10px 0; /* Espaçamento entre os itens do menu */
   }
-  
-  .navbar-menu a {
-    text-decoration: none;
-    color: white;
-  }
-  
+}
+
   a {
     display: block;
     width: auto;
@@ -77,11 +93,10 @@
 }
 
 footer {
-    text-align: center;
-    /* padding: 30px ; */
-    background-color: #487eb0;
-    bottom: 0;
-    position: fixed;
-    width: 100%;
+  display: block;
+  /* text-align: center; */
+  padding: 2px 0 5px;
+  background-color: #487eb0;
+
 
 }
