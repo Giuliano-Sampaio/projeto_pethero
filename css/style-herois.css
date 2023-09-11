@@ -14,16 +14,6 @@ main {
     width: 768px;
   }
 }
-@media( 480px<= width < 768px ) {
-  main{
-    width: 480px;
-  }
-}
-@media( width < 480px ) {
-  main{
-    width: 300px;
-  }
-}
 section {
   display: flex;
   flex-wrap: wrap;
@@ -39,16 +29,6 @@ h2 {
     font-size: 2.0em;
   }
 }
-@media( 480px<= width < 768px ) {
-  h2 {
-    font-size: 1.6em;
-  }
-}
-@media( width < 480px ) {
-  h2 {
-    font-size: 1.3em;
-  }
-}
 #card-list {
   text-align: center;
   padding: 7%;
@@ -56,24 +36,12 @@ h2 {
 }
 @media( 1024px<= width < 1280px ) {
   #card-list {
-    padding: 7.5%;
+    padding: 8%;
   }
 }
 @media( 768px<= width < 1024px ) {
   #card-list {
     font-size: 1.2em;
-  }
-}
-@media( 480px<= width < 768px ) {
-  #card-list {
-    font-size: 1.1em;
-    padding: 9%;
-  }
-}
-@media( width < 480px ) {
-  #card-list {
-    font-size: 1.1em;
-    padding: 10%;
   }
 }
 section div ul {
@@ -97,23 +65,8 @@ section div ul {
   .card-icon img {
     width: 220px;
     height: 220px;
-    border: 1.5px solid blueviolet;
+    border: 1.5px solid;
     margin: 15px;
-  }
-}
-@media( 480px<= width < 768px ) {
-  .card-icon img {
-    width: 190px;
-    height: 190px;
-    border: 1.5px solid blueviolet;
-    margin: 10px;
-  }
-}
-@media( width < 480px ) {
-  .card-icon img {
-    width: 250px;
-    height: 250px;
-
   }
 }
 dialog{
@@ -127,16 +80,11 @@ dialog{
   margin: 0 auto;
 }
 .selected p, span {
-  font-size: 1.1em;
+  font-size: 1.6em;
 }
 @media( 768px<= width < 1024px ) {
   .selected p, span {
     font-size: 1.2em;
-  }
-}
-@media( width < 768px ) {
-  .selected p, span {
-    font-size: 0.9em;
   }
 }
 h3 {
@@ -145,11 +93,6 @@ h3 {
 @media( 768px<= width < 1024px ) {
   h3 {
     font-size: 1.6em;
-  }
-}
-@media( width < 768px ) {
-  h3 {
-    font-size: 1.3em;
   }
 }
 .container-botao-conheca {
@@ -167,18 +110,6 @@ h3 {
   .container-botao-conheca {
     width: 768px;
     height: 180px;
-  }
-}
-@media( 480px<= width < 768px ) {
-  .container-botao-conheca {
-    width: 480px;
-    height: 180px;
-  }
-}
-@media( width < 480px ) {
-  .container-botao-conheca {
-    width: 300px;
-    height: 160px;
   }
 }
 
@@ -200,13 +131,6 @@ button, #botaoConheca {
     line-height: 50px;
   }
 }
-@media( width < 480px ) {
-  button, #botaoConheca {
-    margin-top: 10px;
-    height: 50px;
-    line-height: 50px;
-  }
-}
 
 .modal-content {
   width: 75vw;
@@ -216,20 +140,6 @@ button, #botaoConheca {
 @media( 768px<= width < 1024px ) {
   .modal-content {
     margin-top: 10px;
-  }
-}
-@media( 480px<= width < 768px ) {
-  .modal-content {
-    width: 95vw;
-    height: 90vh;
-    margin: 30px auto;
-  }
-}
-@media( width < 480px ) {
-  .modal-content {
-    width: 95vw;
-    height: 90vh;
-    margin: 10px auto;
   }
 }
 .selected {
