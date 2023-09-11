@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link href="../css/style-login.css" rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet">
     <!--          ### Retirando os comentários o style  aparece -->
     <title>PetHero</title>
@@ -39,7 +40,33 @@
         </div>
     </header>
     
-    <main> 
+    <main>
+        <h1>Minha Conta</h1>
+        <section class="textoEsquerda">
+            <div class="container">
+                <p><h2>Minhas informações</h2></p>
+                <button class="botaoEditar"><img id="icone-editar" src="../img/icone_editar.png" ></button>
+            </div>
+            <img class="grid-item img" src="../img/josecarlos.jpeg" >
+            <h4>Nome:</h4> <span>José Carlos</span>
+            <h4>Telefone:</h4> <span>(47)99999-8888</span>
+            <h4>E-mail:</h4> <span>josecarlos@pethero.com.br</span>
+            <h4>Data de nascimento: </h4> <span>12/12/1970</span>
+            <h4>Descrição perfil: </h4> <span>Fico muito feliz em ajudar como posso os cuidadores de animais encontrados em situação vulnerável</span>
+        </section>
+
+    <section class="textoEsquerda">
+        <div class="container">
+            <p><h2>Itens disponíveis para doação:</h2></p>
+            <button class="botaoEditar"><img id="icone-editar" src="../img/icone_editar.png" ></button>            
+        </div>
+        <ul>
+            <li>Ração premium para gatos: 3kg</li>
+            <li>Casa de cachorro porte médio</li>   
+        </ul>
+    </section>
+
+    <button class="botaoExcluir">Excluir conta</button>
         
     </main>
 

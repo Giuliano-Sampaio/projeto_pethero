@@ -6,125 +6,156 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="../css/style.css" rel="stylesheet">
-    <!--          ### Retirando os comentários o style  aparece -->
+    <link href="../css/style-adote.css" rel="stylesheet">
+    <link href="../css/style-cadastro.css" rel="stylesheet">
+    
     <title>PetHero</title>
-    <style type="text/css">
-        header {
-            font-size: 40px;
-        }
 
-    </style>
-
+</head>
 
 <body>
-    </head>
-
-    <body>
+    <header>
+        <img class="navbar-logo" src="../img/logo.png" alt="Logo do Projeto">
         <div class="navbar">
-            <nav>
-                <a href="../index.html">Home</a>
-                <a href="sobreNos.html">Sobre nós</a>
-                <a href="herois.html">Heróis</a>
-                <a href="queroSerUmHeroi.html">Quero ser um Herói</a>
-                <a href="adoteUmPet.html">Adote um Pet</a>
-                <a href="queroAjudar.html">Quero Ajudar</a>
-            </nav>
+                
+            <ul class="navbar-menu">
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="sobreNos.html">Sobre nós</a>
+                </li>
+                <li>
+                    <a href="herois.html">Heróis</a>
+                </li>
+                <li>
+                    <a href="queroSerUmHeroi.html">Quero ser um Herói</a>
+                </li>
+                <li>
+                    <a href="adoteUmPet.html">Adote um Pet</a>
+                </li>
+                <li>
+                    <a href="queroAjudar.html">Login</a>
+                </li>
+            </ul>
         </div>
-
-        <span>
-
-            <h1>PetHero</h1>
-            <img src="../img/logo-pethero.png" width="150px" alt="Logo PetHero">
-
-        </span>
-
-        </div>
-    </body>
-
-
+    </header>
+    
     <main>
-        <div>
-        <fieldset>
-            <h1>Cadastro de Heróis</h1>
-        </fieldset>
-        <fieldset>
-            <h2>Complete suas informações:</h2>
-            <br>
-        </fieldset>
-    </div>
-
-    <form>
-        <fieldset>
-            <div>
-                <label>Nome Completo:</label>
-                <input type="text" name="nome" id="nome">
-            </div>
-            <div>
-                <label>Data de Nascimento</label>
-                <input type="number" name="numero" id="numero">
-            </div>
-
-            <div>
-                <label>Estado:</label>
-                <input type="text" name="Estado" id="Estado">
-            </div>
-
-            <div>
-                <label>Cidade:</label>
-                <input type="text" name="Cidade" id="Cidade">
-            </div>
-
-        </fieldset>
-        <fieldset>
-            <div>
-                <label>E-mail:</label>
-                <input type="email" name="email" id="email">
-        </fieldset>
+        <div class="Campo">
+            <fieldset class="Grupo">
+                <h1 id="Título">Cadastro de Heróis</h1>
+            </fieldset>
+            <fieldset>
+                <h2 id="Subtítulo">Complete suas informações:</h2>
+            </fieldset>
         </div>
-        <fieldset>
-            <div>
-                <label>Em qual categoria você se enquandra?</label>
-                <input type="radio" name="doador" value="doadoranjo">Doador(a)
-                <input type="radio" name="tutor(a)" value="tutor(a)">Tutor(a)
-                <input type="radio" name="Veterinário(a)" value="Veterinário(a)">Veterinário(a)
-                <input type="radio" name="PetSister" value="PetSister">PetSister-Voluntário(a)
-                <input type="radio" name="Outros" value="Outros">Outros
-        </fieldset>
+        <div class="Campo">
+            <form>
+                <fieldset class="Grupo">
+                    <div class="Campo">
+                        <label class="obrigatorios" for="nome"><strong>Nome Completo:*</strong></label>
+                        <input type="text" name="nome" id="nome" required>
+                    </div>
+                    <div class="Campo">
+                        <label class="obrigatorios" for="numero"><strong>Data de Nascimento:*</strong></label>
+                        <input type="date" name="data_nascimento" id="data_nascimento" required>
+                    </div>
+                    <div class="Campo">
+                        <label for="Estado"><strong>Estado:</strong></label>
+                        <input type="text" name="Estado" id="Estado">
+                    </div>
+                    <div class="Campo">
+                        <label for="Cidade"><strong>Cidade:</strong></label>
+                        <input type="text" name="Cidade" id="Cidade">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div class="Campo">
+                        <label class="obrigatorios" for="email"><strong>E-mail:*</strong></label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div class="Campo">
+                        <label class="obrigatorios" for="senha"><strong>Senha:*</strong></label>
+                        <input type="password" name="senha" id="senha" required>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div class="Campo">
+                        <label class="obrigatorios" for="confirme_senha"><strong>Confirme senha:*</strong></label>
+                        <input type="password" name="confirme_senha" id="confirme_senha" required>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div class="Campo">
+                        <label class="obrigatorios" for="telefone"><strong>Telefone:*</strong></label>
+                        <input type="tel" name="telefone" id="telefone" required>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div class="Campo">
+                        <label><strong>Em qual categoria você se encaixa?</strong></label><br>
+                        <input type="radio" name="categoria" value="Doador(a)"> Doador(a)
+                        <input type="radio" name="categoria" value="Tutor(a)"> Tutor(a)
+                        <input type="radio" name="categoria" value="Veterinário(a)"> Veterinário(a)
+                        <input type="radio" name="categoria" value="Pet-Sitter"> Pet-Sitter-Voluntário(a)
+                        <input type="radio" name="categoria" value="Outros"> Outros
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div class="Campo">
+                        <label><strong>Apenas doar:</strong></label>
+                        <select id="apenas_doar" name="apenas_doar">
+                            <option value="Ração">Ração</option>
+                            <option value="Doar Pet-Happy">Doar Pet-Happy</option>
+                            <option value="Fazer um pix">Fazer um pix</option>
+                            <option value="Doar produtos de limpeza">Doar produtos de limpeza</option>
+                            <option value="Pet-Dayli">Pet-Dayli (um dia com os pets)</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div class="Campo">
+                        <label><strong>Como chegou até nossa página?</strong></label><br>
+                        <input type="checkbox" id="redes_sociais" name="redes_sociais">
+                        <label for="redes_sociais">Redes Sociais</label>
+                        <input type="checkbox" id="indicacao_amigo" name="indicacao_amigo">
+                        <label for="indicacao_amigo">Indicação de Amigo</label>
+                        <input type="checkbox" id="voluntarios" name="voluntarios">
+                        <label for="voluntarios">Voluntários</label>
+                        <input type="checkbox" id="outros_meios" name="outros_meios">
+                        <label for="outros_meios">Outros Meios</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div class="Campo">
+                        <label><strong>Outras informações:</strong></label><br>
+                        <textarea rows="6" style="width: 100%" id="outras_informacoes" name="outras_informacoes"></textarea>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <label class="obrigatorios"><strong>*Campos Obrigatórios</strong></label><br>
+                    <button type="submit"><strong>Enviar</strong></button>
+                </fieldset>
+            </form>
         </div>
-        <fieldset>
-            <div>
-                <label>Apenas doar:</label>
-                <select id="Apenas Doar">
-                    <option>Ração</option>
-                    <option>Doar Pet-Happy</option>
-                    <option>Fazer um pix</option>
-                    <option>Doar produtos de limpeza</option>
-                    <option>Pet-Dayli (um dia com os pets)</option>
-                </select>
-        </fieldset>
-        </div>
+    </main>
+    
 
-        <fieldset>
-            <div>
-                <label>Como chegou até nossa página?</label>
-                <input type="checkbox" id="Redes Sociais" name="Redes Sociais">Redes Sociais
-                <input type="checkbox" id="Indicação de amigo" name="Indicação de amigo">Indicação de Amigo
-                <input type="checkbox" id="Voluntários" name="Voluntários">Voluntários
-                <input type="checkbox" id="Outros" name="Outros">Outros
-            </div>
-        </fieldset>
-        <fieldset>
-            <div>
-                <label>Outras informações:</label>
-                <textarea rem="6" style="width:26m" id="Outras Informações" name="Outras Informações"></textarea>
-        </fieldset>
-        </div>
-
-        <button type="submit">Concluido</button>
-    </form>
     <footer>
-        <img src="../img/logo-pata-pethero.png" width="40px"" alt=" Logo pata PetHero">
-        <p class="copyrigth">&copy; Copyrigth PetHero - 2023</p>
+        <a class="copyrigth">&copy; Copyrigth PetHero - 2023</a>
     </footer>
 
-  </html>
+</body>
+<script>
+    function openModal() {
+      document.getElementById("myModal").style.display = "flex";
+    }
+
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+  </script>
+</html>

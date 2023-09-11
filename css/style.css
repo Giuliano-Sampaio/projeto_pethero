@@ -4,46 +4,62 @@
     padding: 0;
   }
 
+/* Estilos gerais para o cabeçalho */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #487eb0;
+  color: #fff;
+}
+
+.navbar-logo {
+  max-width: 4rem;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.navbar-menu li {
+  margin-right: 20px; /* Adicione um espaçamento entre os itens do menu */
+}
+
+.navbar-menu a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+/* Estilos específicos para telas pequenas e móveis */
+@media (max-width: 768px) {
   header {
-    background-color: #487eb0;
-    display: flex;
-    justify-content: space-between;
-    padding: 16px;
-    margin-bottom: 16px;
-    height: 40px;
+      flex-direction: column;
+      text-align: center;
   }
 
   .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* background-color: #333; */
-    padding: 10px 20px;
-    color: white;
+      margin-top: 20px; /* Adicione margem acima da navbar */
   }
-  
-  .navbar-logo {
-    display: block;
-    width: 80px;
-    height: auto;
-  }
-  
+
   .navbar-menu {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+      flex-direction: column;
   }
-  
+
   .navbar-menu li {
-    padding: 0;
-    margin: 0;
+      margin: 10px 0; /* Espaçamento entre os itens do menu */
   }
-  
-  .navbar-menu a {
-    text-decoration: none;
-    color: white;
-  }
-  
+}
+
   a {
     display: block;
     width: auto;
@@ -62,62 +78,12 @@
 
     .navbar a:hover {
       background-color: #FF8C00;
-      color: ;
+      
       
       /* border-radius: 8px; */
   }
 
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 20px;
-  }
-  
-  .grid-item {
-    border: 1px solid #ccc;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .grid-item img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .grid-item h3 {
-    margin-top: 10px;
-  }
-  
-  .grid-item button {
-    background-color: #e84118;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-  }
-
-  /* Estilos para o modal */
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    align-items: center;
-    justify-content: center;
-  }
-
-  .modal-content {
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-  }
-
-
+ 
 
 .logo {
     margin-top: 10px;
@@ -127,8 +93,10 @@
 }
 
 footer {
-    text-align: center;
-    padding: 30px ;
-    background-color: #487eb0;
+  display: block;
+  /* text-align: center; */
+  padding: 2px 0 5px;
+  background-color: #487eb0;
+
 
 }

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/style-adote.css" rel="stylesheet">
+    <!--          ### Retirando os comentários o style  aparece -->
+    <title>PetHero</title>
+
+</head>
+
+<body>
+    <header>
+        <img class="navbar-logo" src="../img/logo.png" alt="Logo do Projeto">
+        <div class="navbar">
+                
+            <ul class="navbar-menu">
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="sobreNos.html">Sobre nós</a>
+                </li>
+                <li>
+                    <a href="herois.html">Heróis</a>
+                </li>
+                <li>
+                    <a href="queroSerUmHeroi.html">Quero ser um Herói</a>
+                </li>
+                <li>
+                    <a href="adoteUmPet.html">Adote um Pet</a>
+                </li>
+                <li>
+                    <a href="queroAjudar.html">Quero Ajudar</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    
+    <main> 
+               <div>
+        <fieldset>
+            <h1>Cadastro de Heróis</h1>
+        </fieldset>
+        <fieldset>
+            <h2>Complete suas informações:</h2>
+            <br>
+        </fieldset>
+    </div>
+
+    <form>
+        <fieldset>
+            <div>
+                <label>Nome Completo:</label>
+                <input type="text" name="nome" id="nome">
+            </div>
+            <div>
+                <label>Data de Nascimento</label>
+                <input type="number" name="numero" id="numero">
+            </div>
+
+            <div>
+                <label>Estado:</label>
+                <input type="text" name="Estado" id="Estado">
+            </div>
+
+            <div>
+                <label>Cidade:</label>
+                <input type="text" name="Cidade" id="Cidade">
+            </div>
+
+        </fieldset>
+        <fieldset>
+            <div>
+                <label>E-mail:</label>
+                <input type="email" name="email" id="email">
+        </fieldset>
+        </div>
+        <fieldset>
+            <div>
+                <label>Em qual categoria você se enquandra?</label>
+                <input type="radio" name="doador" value="doadoranjo">Doador(a)
+                <input type="radio" name="tutor(a)" value="tutor(a)">Tutor(a)
+                <input type="radio" name="Veterinário(a)" value="Veterinário(a)">Veterinário(a)
+                <input type="radio" name="PetSister" value="PetSister">PetSister-Voluntário(a)
+                <input type="radio" name="Outros" value="Outros">Outros
+        </fieldset>
+        </div>
+        <fieldset>
+            <div>
+                <label>Apenas doar:</label>
+                <select id="Apenas Doar">
+                    <option>Ração</option>
+                    <option>Doar Pet-Happy</option>
+                    <option>Fazer um pix</option>
+                    <option>Doar produtos de limpeza</option>
+                    <option>Pet-Dayli (um dia com os pets)</option>
+                </select>
+        </fieldset>
+        </div>
+
+        <fieldset>
+            <div>
+                <label>Como chegou até nossa página?</label>
+                <input type="checkbox" id="Redes Sociais" name="Redes Sociais">Redes Sociais
+                <input type="checkbox" id="Indicação de amigo" name="Indicação de amigo">Indicação de Amigo
+                <input type="checkbox" id="Voluntários" name="Voluntários">Voluntários
+                <input type="checkbox" id="Outros" name="Outros">Outros
+            </div>
+        </fieldset>
+        <fieldset>
+            <div>
+                <label>Outras informações:</label>
+                <textarea rem="6" style="width:26m" id="Outras Informações" name="Outras Informações"></textarea>
+        </fieldset>
+        </div>
+
+        <button type="submit">Concluido</button>
+        
+    </form>
+    </main>
+
+    <footer>
+        <a class="copyrigth">&copy; Copyrigth PetHero - 2023</a>
+    </footer>
+
+</body>
+<script>
+    function openModal() {
+      document.getElementById("myModal").style.display = "flex";
+    }
+
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+  </script>
+</html>

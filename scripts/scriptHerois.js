@@ -92,11 +92,12 @@ for (let i = 0; i < totalHerois; i++) {
     for (let j = 0; j < herois.length; j++) {
       if (j === 0) {//na primeira iteração vamos criar o titulo
         let itemLista = document.createElement("li"); // Criar o elemento <li>
-        itemLista.textContent = "Nossos Heróis"; // Definir o titulo <li>
+        itemLista.textContent = "Nossos Heróis:"; // Definir o titulo <li>
         listaDeHerois.appendChild(itemLista);// adicionar o item a lista
         continue;// pula para proxima iteração do loop
       }
-      let itemLista = document.createElement("li"); // Criar o elemento <li> item da lista
+      let itemLista = document.createElement("li");// Criar o elemento <li> item da lista
+      itemLista.onclick = function() { openModal(`${herois[j].id}`);};
       itemLista.textContent = `${herois[j].nome}`; // Definir o texto do elemento <li> nome da cuidadora
       listaDeHerois.appendChild(itemLista); // Adicionar o elemento <li> à lista
     }
@@ -125,30 +126,24 @@ function openModal(idHeroi) {
   });
 
   const objetoHtmlModal = `
-  <h2>Cuidadora ${heroi.nome}</h2>
-
-  <img id="imgCardSelected" src=${heroi.fotoModal} alt="Foto Cuidadora ${heroi.nome}"/>
-  <p>${heroi.frase}</p>
-
-  <h3>Faça uma doação</h3>
-
-  <p>${heroi.pix}</p>
-
-  <p>${heroi.nomeCompleto} - ${heroi.banco}</p>
-
-  <p>ou compareça ao local para serviço volutário</p>
-
-  <p>cidade: ${heroi.cidade} - contato: ${heroi.contato} - ${heroi.contatoTipo}</p>
-
-  <p>endereço: ${heroi.endereco}</p>
-
+  <h2>Cuidadora ${heroi.nome}</h2>\n
+  <img id="imgCardSelected" src=${heroi.fotoModal} alt="Foto Cuidadora ${heroi.nome}"/>\n
+  <p>${heroi.frase}</p>\n
+  <h3>Faça uma doação</h3>\n
+  <p>${heroi.pix}</p>\n
+  <p>${heroi.nomeCompleto} - ${heroi.banco}</p>\n
+  <p>ou compareça ao local para serviço volutário</p>\n
+  <p>cidade: ${heroi.cidade} - contato: ${heroi.contato} - ${heroi.contatoTipo}</p>\n
+  <p>endereço: ${heroi.endereco}</p>\n
   <button onclick="closeModal()">Fechar</button>
   `;
   document.getElementById("container-modal-content").innerHTML =
     objetoHtmlModal;
-  document.getElementById("myModal").style.display = "block";
+  //document.getElementById("myModal").style.display = "block";
+  document.querySelector("dialog").showModal();
 }
 
 function closeModal() {
-  document.getElementById("myModal").style.display = "none";
+  //document.getElementById("myModal").style.display = "none";
+  document.querySelector("dialog").close();
 }

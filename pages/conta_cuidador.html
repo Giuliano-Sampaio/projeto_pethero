@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="../css/style-user.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <!--          ### Retirando os comentários o style  aparece -->
+    <title>PetHero</title>
+
+</head>
+
+<body>
+    <header>
+        <img class="navbar-logo" src="../img/logo.png" alt="Logo do Projeto">
+        <div class="navbar">
+                
+            <ul class="navbar-menu">
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="sobreNos.html">Sobre nós</a>
+                </li>
+                <li>
+                    <a href="herois.html">Heróis</a>
+                </li>
+                <li>
+                    <a href="queroSerUmHeroi.html">Quero ser um Herói</a>
+                </li>
+                <li>
+                    <a href="adoteUmPet.html">Adote um Pet</a>
+                </li>
+                <li>
+                    <a href="queroAjudar.html">Login</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    
+    <main>
+        <h1>Minha Conta</h1>
+        <section class="textoEsquerda">
+            <div class="container">
+                <p><h2>Minhas informações</h2></p>
+                <button class="botaoEditar"> <img id="icone-editar" src="../img/icone_editar.png" ></button>
+            </div>
+            <img class="grid-item img" src="../img/RosanaId1Card.jpg" >
+            <h4>Nome:</h4> <span id="nome">Rosana</span>
+            <h4>Telefone:</h4> <span id="telefone">(47)99999-8888</span>
+            <h4>E-mail:</h4> <span id="email-telaAdm">rosana@pethero.com.br</span>
+            <h4>Data de nascimento: </h4> <span id="dataNasc">12/12/1970</span>
+            <h4>Descrição perfil: </h4> <span id="descriçãoPerfil">Minha vida é lutar pelos animais que são abandonados a propria sorte, para mim eles são anjinhos que não falam a nossa lingua mas estão neste mundo apenas para nos dar amor. Se vc se identifica com essa causa Junte-se a mim</span>
+        </section>
+
+        <section class="textoEsquerda">
+            <div class="container">
+                <p><h2>Pets para adoção</h2></p>
+                            
+            </div>
+
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="../img/adoteUmPet/dog1.jpg" alt="Animal 1">
+                    <h3>Bella</h3>
+                    <button class="botaoEditar"><img id="icone-editar" src="../img/icone_editar.png"></button>
+                </div>
+
+                <div class="grid-item">
+                    <img src="../img/adoteUmPet/gato2.jpg" alt="Animal 2">
+                    <h3>Max</h3>
+                    <button class="botaoEditar"><img id="icone-editar" src="../img/icone_editar.png"></button>
+                </div>
+
+                <div class="grid-item">
+                    <img src="../img/adoteUmPet/dog5.jpg" alt="Animal 4">
+                    <h3>Thor</h3>
+                    <button class="botaoEditar"><img id="icone-editar" src="../img/icone_editar.png"></button>
+                </div>
+                <div class="grid-item">
+                    <img src="../img/adoteUmPet/dog4.jpg" alt="Animal 5">
+                    <h3>Rocky</h3>
+                    <button class="botaoEditar"><img id="icone-editar" src="../img/icone_editar.png"></button>
+                </div>
+
+            </div>
+        </section>
+
+        <button class="botaoExcluir">Excluir conta</button>
+        
+    </main>
+
+    <footer>
+        <a class="copyrigth">&copy; Copyrigth PetHero - 2023</a>
+    </footer>
+
+</body>
+<script>
+    function openModal() {
+      document.getElementById("myModal").style.display = "flex";
+    }
+
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+  </script>
+</html>
