@@ -1,10 +1,27 @@
-* {
-    font-family: 'Maven Pro', sans-serif;
-    margin: 0;
-    padding: 0;
-  }
+/*
+* Nesse arquivo style.css está presente somente a estilização
+* dos elementos comuns em todas as páginas
+* é de obrigação ele está linkado nelas
+*
+* ATENÇÃO!!! NÃO ALTERAR NADA NESSA PÁGINA PARA ESTILIZAR
+* A SUA PÁGINA, POIS VAI SER REPLICADO NAS OUTRAS.
+*/
 
-/* Estilos gerais para o cabeçalho */
+/* Estilos gerais para o corpo */
+body {
+  font-family: 'Maven Pro', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos gerais para links */
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+/* Estilos gerais para cabeçalho */
 header {
   display: flex;
   justify-content: space-between;
@@ -13,7 +30,6 @@ header {
   color: #fff;
   background-color: #e5e5e5;
 }
-
 
 .navbar-logo {
   max-width: 4.5rem;
@@ -40,70 +56,60 @@ header {
 }
 
 .navbar-menu a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 1rem;
-  background-color: #00BFFF;
-  border-radius: 8px;
-}
-
-/* Estilos específicos para telas pequenas e móveis */
-@media (max-width: 768px) {
-  header {
-      flex-direction: column;
-      text-align: center;
-  }
-
-  .navbar {
-      margin-top: 20px; /* Adicione margem acima da navbar */
-  }
-
-  .navbar-menu {
-      flex-direction: column;
-  }
-
-  .navbar-menu li {
-      margin: 10px 0; /* Espaçamento entre os itens do menu */
-  }
-}
-
-a {
   display: block;
   width: auto;
   height: auto;
   line-height: 20px;
   padding: 10px 5px;
   margin: 5px;
-  /* background-color: #000; */
-  color: black;
-  /* border-radius: 5px; */
-  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  background-color: #00BFFF;
+  border-radius: 8px;
   text-align: center;
-  font-weight: bold;
-  font-family: Arial;
+}
+
+/* Estilos específicos para telas pequenas e móveis */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
   }
 
-  .navbar a:hover {
-    background-color: #FF8C00;
-    /* border-radius: 8px; */
+  .navbar {
+    margin-top: 20px; /* Adicione margem acima da navbar */
+  }
+
+  .navbar-menu {
+    flex-direction: column;
+  }
+
+  .navbar-menu li {
+    margin: 10px 0; /* Espaçamento entre os itens do menu */
+  }
 }
 
 
- 
-
+/* Estilos para o logotipo */
 .logo {
-    margin-top: 10px;
-    margin-right: 10px;
-    margin-left: 10px;
-    border-radius: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  border-radius: 10px;
 }
 
+/* Estilos para o rodapé */
 footer {
-  display: block;
-  /* text-align: center; */
   text-align: center;
-  padding: 20px ;
+  padding: 20px;
   background-color: #e5e5e5;
-  
+}
 
+/* Estilos para o rodapé */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #e5e5e5;
+  color: #555;
+  font-size: 0.8rem;
 }
