@@ -2,76 +2,289 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="CSS/styleHome.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,300;1,400;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Roboto:ital,wght@1,900&display=swap"
-        rel="stylesheet">
-        <script src="scripts/scriptHome.js"></script>
-    <title>PetHero</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Adicione o CSS para o carousel aqui -->
+  <!-- 
+    - Titulo Site
+  -->
+  <title>PetHero - Ajudando quem ajuda</title>
+  <meta name="title" content="PetHero - Ajudando quem ajuda.">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - link css
+  -->
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- 
+    - link fontes google
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Nunito+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
+
+
 
 </head>
 
-<body>
-    <header>
-        <img class="navbar-logo" src="img/logo.png" alt="Logo PetHero">
-        <div class="navbar">
-            <ul class="navbar-menu">
-                <li><a href="index.html"><b>Home</b></a></li>
-                <li><a href="pages/sobreNos.html"><b>Sobre nós</b></a></li>
-                <li><a href="pages/herois.html"><b>Heróis</b></a></li>
-                <li><a href="pages/queroSerUmHeroi.html"><b>Quero ser um Herói</b></a></li>
-                <li><a href="pages/adoteUmPet.html"><b>Adote um Pet</b></a></li>
-                <li><a href="pages/queroAjudar.html"><b>Login</b></a></li>
-            </ul>
-            <!-- <div class="menu-icon" onclick="toggleMenu()">&#9776;</div> -->
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <button class="nav-toggle-btn" aria-label="toggle manu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true" class="menu-icon"></ion-icon>
+        <ion-icon name="close-outline" aria-label="true" class="close-icon"></ion-icon>
+      </button>
+
+      <a href="#" class="logo">PetHero</a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="index.html" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="pages/sobreNos.html" class="navbar-link" data-nav-link>Sobre Nós</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="pages/herois.html" class="navbar-link" data-nav-link>Heróis</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="pages/queroSerUmHeroi.html" class="navbar-link" data-nav-link>Quero Ser Um Herói</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="pages/adoteUmPet.html" class="navbar-link" data-nav-link>Adote Um Pet</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="pages/login.html" class="navbar-link" data-nav-link>Login</a>
+          </li>
+        </ul>
+
+        <a href="pages/login.html" class="navbar-action-btn">Login</a>
+      </nav>    
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero has-bg-image" id="home" aria-label="home"
+        style="background-image: url('./img/bannerPet.png')">
+        <div class="container">
+
+          <h1 class="h1 hero-title" >
+            <span class="span" style="color:#00BFFF;">Seja um</span> <span style="color: #FF8C00;">Pet Hero</span>
+          </h1>
+
+          <p class="hero-text" style="color: #00BFFF;"><strong>Ajude quem ajuda esses ajinhos</strong></p>
+
         </div>
-    </header>
+      </section>
 
-    <main>
-        <section class="content1">
-            <div class="feature1">
-                <img class="img1" src="img/banner.png" alt="Animais Resgatados">
-                <!-- <h2>Resgatamos Animais</h2> -->
-        </section>
+      <!-- 
+        - #Informações
+      -->
 
-        <section class="content">
-            <div class="feature">
-                <img src="img/animais01.png" alt="Animais Resgatados">
-                <!-- <h2>Resgatamos Animais</h2> -->
-                <p>A PetHero vem com a missão de conectar pessoas
-                    voluntarias da causa animal a (cuidadores
-                    independentes), conhecendo o seu trabalho, sua história e onde se localizam.
-                    Podendo dessa forma contribuir financeiramente, com serviço
-                    voluntario ou fazendo uma adoção responsável.
-                </p>
-            </div>
-    
-            <div class="feature">
-                <img src="img/animais02.png" alt="Adoções Responsáveis">
-                <!-- <h2>Adoções Responsáveis</h2> -->
-                <p class="text1">A Organização Mundial da Saúde estima que, só no Brasil, existam mais
-                    de 30 milhões de animais sem um lar,
-                    sendo 10 milhões de gatos e 20 milhões de cães. De todos estes cachorrinhos 
-                    abandonados, 14 milhões acabam em abrigos, sendo que 90% nunca encontrarão um dono para chamar de seu.
-                </p>
-            </div>
-        </section>
-    </main>
+      <section class="section offer" aria-label="offer">
+        <div class="container">
 
-    <footer>
-        <a class="Copyrigth"> &copy; Copyright PetHero - 2023</a>
-    </footer>
+          <ul class="grid-list">
 
+            <li>
+              <div class="offer-card has-bg-image img-holder"
+                style="background-image: url('./assets/images/offer-banner-1.jpg'); --width: 540; --height: 374;">
+
+                <h3 class="card-subtitle">A PetHero vem com a missão de conectar pessoas voluntarias da causa animal a 
+                  (cuidadores independentes), conhecendo o seu trabalho, sua história e onde se localizam. Podendo dessa 
+                  forma contribuir financeiramente, com serviço voluntario ou fazendo uma adoção responsável.</h3>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="offer-card has-bg-image img-holder"
+                style="background-image: url('./assets/images/offer-banner-2.jpg'); --width: 540; --height: 374;">
+
+                <p class="card-subtitle">A Organização Mundial da Saúde estima que, só no Brasil, existam mais de 
+                  30 milhões de animais sem um lar, sendo 10 milhões de gatos e 20 milhões de cães. De todos estes 
+                  cachorrinhos abandonados, 14 milhões acabam em abrigos, sendo que 90% nunca encontrarão um dono 
+                  para chamar de seu.</p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="offer-card has-bg-image img-holder"
+                style="background-image: url('./assets/images/offer-banner-3.jpg'); --width: 540; --height: 374;">
+
+                <p class="card-subtitle">No Brasil, o abandono de animais é considerado crime ambiental, de acordo 
+                  com a Lei Federal nº 9.605/1998 (Lei de Crimes Ambientais). De acordo com essa lei, abandonar 
+                  animais é considerado maus-tratos e pode resultar em pena de prisão e multa. Além disso, vários
+                   estados brasileiros têm leis e regulamentos adicionais que abordam especificamente o abandono 
+                   de animais.</p>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" style="background-image: url('./img/footerBlue.png')">
+
+    <div class="footer-top section">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">Pet Hero</a>
+
+          <p class="footer-text" style="color: white;">
+            Para mais perguntas, entre em contato. <strong><a href="mailto:suport@gmail.com"
+              class="link">suport@gmail.com</a></strong>
+          </p>
+
+          <ul class="contact-list">
+
+            <li class="contact-item">
+              <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+              <address class="address">
+                Brasil
+              </address>
+            </li>
+
+            <li class="contact-item">
+              <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+
+              <a href="tel:+55xx999999999" class="contact-link">+55 (xx) 9.9999-9999</a>
+            </li>
+
+          </ul>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list" style="color: white;">
+
+          <li>
+            <p class="footer-list-title">Mapa do Site</p>
+          </li>
+
+          <li>
+            <a href="index.html" class="footer-link">Home</a>
+          </li>
+
+          <li>
+            <a href="pages/sobreNos.html" class="footer-link">Sobre Nós</a>
+          </li>
+
+          <li>
+            <a href="pages/herois.html" class="footer-link">Herós</a>
+          </li>
+
+          <li>
+            <a href="pages/queroSerUmHeroi.html" class="footer-link">Quero Ser Um Herói</a>
+          </li>
+
+          <li>
+            <a href="pages/queroSerUmHeroi.html" class="footer-link">Adote Um Pet</a>
+          </li>
+
+          <li>
+            <a href="pages/login.html" class="footer-link">Login</a>
+          </li>
+
+        </ul>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright" style="color: white;">
+          &copy; 2023 Todos os direitos reservados a <a href="#top" class="copyright-link">PetHero.</a>
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- 
+    - #Volta para o Topo
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./scripts/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 

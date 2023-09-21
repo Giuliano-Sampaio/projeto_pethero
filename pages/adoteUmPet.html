@@ -2,153 +2,373 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="../css/style.css" rel="stylesheet">
-    <link href="../css/styleAdote.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,300;1,400;1,900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
+  <!-- 
+    - Titulo Site
+  -->
+  <title>PetHero - Ajudando quem ajuda</title>
+  <meta name="title" content="PetHero - Ajudando quem ajuda.">
 
-    <title>PetHero</title>
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="../favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - link css
+  -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/styleAdotePet.css">
+
+  <!--
+    - link fontes google
+  -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Nunito+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.jpg">
 
 </head>
 
-<body>
-    <header>
-        <img class="navbar-logo" src="../img/logo.png" alt="Logo PetHero">
-        <div class="navbar">
-            <ul class="navbar-menu">
-                <li><a href="../index.html"><b>Home</b></a></li>
-                <li><a href="sobreNos.html"><b>Sobre nós</b></a></li>
-                <li><a href="herois.html"><b>Heróis</b></a></li>
-                <li><a href="queroSerUmHeroi.html"><b>Quero ser um Herói</b></a></li>
-                <li><a href="adoteUmPet.html"><b>Adote um Pet</b></a></li>
-                <li><a href="queroAjudar.html"><b>Login</b></a></li>
-            </ul>
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <button class="nav-toggle-btn" aria-label="toggle manu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true" class="menu-icon"></ion-icon>
+        <ion-icon name="close-outline" aria-label="true" class="close-icon"></ion-icon>
+      </button>
+
+      <a href="#" class="logo">PetHero</a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="../index.html" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="sobreNos.html" class="navbar-link" data-nav-link>Sobre Nós</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="herois.html" class="navbar-link" data-nav-link>Heróis</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="queroSerUmHeroi.html" class="navbar-link" data-nav-link>Quero Ser Um Herói</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="adoteUmPet.html" class="navbar-link" data-nav-link>Adote Um Pet</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="login.html" class="navbar-link" data-nav-link>Login</a>
+          </li>
+        </ul>
+
+        <a href="login.html" class="navbar-action-btn">Login</a>
+      </nav>    
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero has-bg-image" id="home" aria-label="home"
+        style="background-image: url('../img/bannerAdotePet.png')">
+        <div class="container">
+
+          <h1 class="h1 hero-title" >
+            <span class="span" style="color:#00BFFF;">Dê um lar a quem precisa:</span> <span style="color: #FF8C00;">#PetHero</span>
+          </h1>
+
+          <p class="hero-text" style="color: #00BFFF;"><strong>Adote um animal de rua</strong></p>
+
         </div>
-    </header>
-    
-    <main> 
-        <!-- Aqui começa o GRID que agrupa os animais a serem adotados -->
-        <div class="grid-container">
-            <div class="grid-item">
-                <img src="../img/adoteUmPet/dog1.jpg" alt="Animal 1">
-                <h3>Bella</h3>
-                <button dog-nome="Bella" onclick="openModal()">Saiba Mais</button>
-            </div>
-            <div class="grid-item">
-                <img src="../img/adoteUmPet/gato2.jpg" alt="Animal 2">
-                <h3>Max</h3>
-                <button onclick="openModal()">Saiba Mais</button>
-            </div>
-            <div class="grid-item">
-                <img src="../img/adoteUmPet/dog3.png" alt="Animal 3">
-                <h3>Lola</h3>
-                <button onclick="openModal()">Saiba Mais</button>
-            </div>
-            <div class="grid-item">
-                <img src="../img/adoteUmPet/dog5.jpg" alt="Animal 4">
-                <h3>Thor</h3>
-                <button onclick="openModal()">Saiba Mais</button>
-            </div>
-            <div class="grid-item">
-                <img src="../img/adoteUmPet/dog4.jpg" alt="Animal 5">
-                <h3>Rocky</h3>
-                <button onclick="openModal()">Saiba Mais</button>
-            </div>
-            <div class="grid-item">
-                <img src="../img/adoteUmPet/dog2.jpg" alt="Animal 6">
-                <h3>Mel</h3>
-                <button onclick="openModal()">Saiba Mais</button>
-            </div>
-            <div class="grid-item">
-                <img src="../img/adoteUmPet/gato1.jpg" alt="Animal 5">
-                <h3>Luna</h3>
-                <button onclick="openModal()">Saiba Mais</button>
-            </div>
-            <div class="grid-item">
-                <img src="../img/adoteUmPet/dog6.jpg" alt="Animal 6">
-                <h3>Toby</h3>
-                <button onclick="openModal()">Saiba Mais</button>
-            </div>
+      </section>
+
+
+      <!-- 
+        - #Aminais
+      -->
+
+      <section class="section product" id="shop" aria-label="product">
+        <div class="container">
+
+          <h2 class="h2 section-title">
+            <span class="span">Cuidadores(as)</span> Independentes Cadastrados(as)
+          </h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                  <img src="../img/adoteUmPet/dog1.jpg" width="360" height="360" loading="lazy"
+                    alt="Commodo leo sed porta" class="img-cover ">
+                </div>               
+                <a class="card-title" onclick="openModal()">Lolla</a>
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                  <img src="../img/adoteUmPet/dog2.jpg" width="360" height="360" loading="lazy"
+                    alt="Purus consequat congue sit" class="img-cover ">
+                </div>               
+                <a class="card-title" onclick="openModal()">Thor</a>
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                  <img src="../img/adoteUmPet/dog3.png" width="360" height="360" loading="lazy"
+                    alt="Purus consequat congue sit" class="img-cover ">
+                </div>               
+                <a class="card-title" onclick="openModal()">Caramelo</a>
+              </div>
+            </li>
+
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                  <img src="../img/adoteUmPet/gato2.jpg" width="360" height="360" loading="lazy"
+                    alt="Morbi vel arcu scelerisque" class="img-cover ">
+                </div>                
+                <a class="card-title" onclick="openModal()">Mary</a>
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                  <img src="../img/adoteUmPet/gato1.jpg" width="360" height="360" loading="lazy"
+                    alt="Morbi vel arcu scelerisque" class="img-cover ">
+                </div>
+                <a class="card-title" onclick="openModal()">Teo</a>
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                  <img src="../img/adoteUmPet/dog4.jpg" width="360" height="360" loading="lazy"
+                    alt="Nam justo libero porta ege" class="img-cover ">
+                </div>
+                <a class="card-title" onclick="openModal()">Lucky</a>
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                  <img src="../img/adoteUmPet/dog6.jpg" width="360" height="360" loading="lazy"
+                    alt="Nam justo libero porta ege" class="img-cover ">
+                </div>
+                <a class="card-title" onclick="openModal()">Chery</a>
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                  <img src="../img/adoteUmPet/dog5.jpg" width="360" height="360" loading="lazy"
+                    alt="Etiam commodo leo sed" class="img-cover ">
+                </div>
+                <a class="card-title" onclick="openModal()">Baltazar</a>
+              </div>
+            </li>
+
+          </ul>
+
         </div>
 
-        <!-- Modal -->
-        <div class="modal" id="myModal">
-            <div class="modal-content">
-            <h2>Detalhes do Animal</h2>
-            <p><strong>Nome:</strong> <span id="dog-name"></span></p>
-            <p><strong>Idade:</strong> <span id="dog-age"></span></p>
-            <p><strong>Raça:</strong> <span id="dog-race"></span></p>
-            <button onclick="closeModal()">Fechar</button>
-            </div>
+        <!--
+          - Modal 
+        -->
+
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <!-- 
+              -Conteúdo do modal 
+            -->
+            <p>
+              <h3>Nome:</h3>
+              <h4>Raça:</h4>
+              <h4>Idade:</h4>
+              
+            </p>
+          </div>
         </div>
-    </main>
+      
+      </section>
 
-    <footer>
-        <a class="Copyrigth"> &copy; Copyrigth PetHero - 2023</a>
-    </footer>
+  </article>
+  </main>
 
+      
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" style="background-image: url('../img/footerBlue.png')">
+
+    <div class="footer-top section">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">Pet Hero</a>
+
+          <p class="footer-text" style="color: white;">
+            Para mais perguntas, entre em contato. <strong><a href="mailto:suport@gmail.com"
+              class="link">suport@gmail.com</a></strong>
+          </p>
+
+          <ul class="contact-list">
+
+            <li class="contact-item">
+              <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+              <address class="address">
+                Brasil
+              </address>
+            </li>
+
+            <li class="contact-item">
+              <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+
+              <a href="tel:+55xx999999999" class="contact-link">+55 (xx) 9.9999-9999</a>
+            </li>
+
+          </ul>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list" style="color: white;">
+
+          <li>
+            <p class="footer-list-title">Mapa do Site</p>
+          </li>
+
+          <li>
+            <a href="../index.html" class="footer-link">Home</a>
+          </li>
+
+          <li>
+            <a href="pages/sobreNos.html" class="footer-link">Sobre Nós</a>
+          </li>
+
+          <li>
+            <a href="pages/herois.html" class="footer-link">Herós</a>
+          </li>
+
+          <li>
+            <a href="pages/queroSerUmHeroi.html" class="footer-link">Quero Ser Um Herói</a>
+          </li>
+
+          <li>
+            <a href="pages/queroSerUmHeroi.html" class="footer-link">Adote Um Pet</a>
+          </li>
+
+          <li>
+            <a href="pages/login.html" class="footer-link">Login</a>
+          </li>
+
+        </ul>
+
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright" style="color: white;">
+          &copy; 2023 Todos os direitos reservados a <a href="#top" class="copyright-link">PetHero.</a>
+        </p>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- 
+    - #Volta para o Topo
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="../scripts/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
-<script>
-    function openModal() {
-      document.getElementById("myModal").style.display = "block";
-    }
 
-    function closeModal() {
-      document.getElementById("myModal").style.display = "none";
-    }
-
-         // Elementos do modal e botões
-         //var modal = document.getElementById("myModal");
-         //var modalContent = document.getElementById("modal-content-text");
-         //var closeBtn = document.querySelector(".close");
-         //var dogName = document.getElementById("dog-name");
-         //var dogAge = document.getElementById("dog-age");
-         //var dogRace = document.getElementById("dog-race");
- 
-         // Botões que abrem o modal
-         //var showModalButtons = document.querySelectorAll(".show-modal");
- 
-         // Adicionar evento de clique para cada botão
-         //showModalButtons.forEach(function(button) {
-         //    button.addEventListener("click", function() {
-        //         var nome = this.getAttribute("data-nome");
-        //         var idade = this.getAttribute("data-idade");
-       //          var raca = this.getAttribute("data-raca");
-                 
-       //          dogName.textContent = nome;
-       //          dogAge.textContent = idade;
-        //         dogRace.textContent = raca;
- 
-        //         modal.style.display = "block";
-        //     });
-        // });
- 
-         // Fechar o modal quando o botão "Fechar" é clicado ou fora do modal
-        // closeBtn.addEventListener("click", function() {
-         //    modal.style.display = "none";
-        // });
- 
-        // window.addEventListener("click", function(event) {
-        //     if (event.target == modal) {
-         ///        modal.style.display = "none";
-          //   }
-        // });
-        
-        function toggleMobileMenu() {
-            const navbarMenuMobile = document.querySelector(".navbar-menu-mobile");
-            navbarMenuMobile.classList.toggle("active");
-        }
-        
-
-        
-        
-  </script>
 </html>

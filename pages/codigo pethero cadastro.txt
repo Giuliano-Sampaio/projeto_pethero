@@ -1,3 +1,18 @@
+"Um pouquinho sobre o nosso time de super-heróis"
+Em um mundo em constante evolução, onde a empatia e a compreensão moldam a maneira como interagimos com o ambiente ao nosso redor,
+ a visão de uma sociedade mais consciente sobre a causa pet desponta como um farol de esperança.
+
+Diante disso, nossa plataforma nasceu de uma missão clara e compassiva de criar um espaço onde pessoas altruístas e animais em busca
+ de amor possam se encontrar.
+
+Estamos aqui para estender a mão a todos aqueles que desejam adotar um animal ou contribuir financeiramente para melhorar suas vidas.
+ Somos uma ponte de esperança, conectando corações generosos a animais em estado de vulnerabilidade.
+
+Nosso compromisso com um mundo mais justo e compassivo é baseado em valores essenciais que refletem na nossa humanidade. 
+Entre esses valores, está a profunda valorização das pessoas e entidades voluntárias que se dedicam incansavelmente à causa
+ do bem-estar animal e que travam uma batalha constante em prol do não abandono.
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 

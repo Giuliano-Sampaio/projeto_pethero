@@ -1,242 +1,45 @@
-main {
-  padding: 0;
-  border: 0;
-  margin: 0 auto;
-  width: 1280px;
-}
-@media( 1024px<= width < 1280px ) {
-  main{
-    width: 1024px;
-  }
-}
-@media( 768px<= width < 1024px ) {
-  main{
-    width: 768px;
-  }
-}
-@media( 480px<= width < 768px ) {
-  main{
-    width: 480px;
-  }
-}
-@media( width < 480px ) {
-  main{
-    width: 300px;
-  }
-}
-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-h2 {
-  margin: 0;
-  text-align: center;
-  font-size: 2.5em;
-}
-@media( 768px<= width < 1024px ) {
-  h2 {
-    font-size: 2.0em;
-  }
-}
-@media( 480px<= width < 768px ) {
-  h2 {
-    font-size: 1.6em;
-  }
-}
-@media( width < 480px ) {
-  h2 {
-    font-size: 1.3em;
-  }
-}
-#card-list {
-  text-align: center;
-  padding: 7%;
-  font-size: 1.6em;
-}
-@media( 1024px<= width < 1280px ) {
-  #card-list {
-    padding: 7.5%;
-  }
-}
-@media( 768px<= width < 1024px ) {
-  #card-list {
-    font-size: 1.2em;
-  }
-}
-@media( 480px<= width < 768px ) {
-  #card-list {
-    font-size: 1.1em;
-    padding: 9%;
-  }
-}
-@media( width < 480px ) {
-  #card-list {
-    font-size: 1.1em;
-    padding: 10%;
-  }
-}
-section div ul {
-  list-style: none;
-}
-.card-icon img {
-  width: 300px;
-  height: 300px;
-  border: 2px solid;
-  border-color: blueviolet;
-  border-radius: 30px;
-  margin: 20px;
-  cursor: pointer;
-}
-@media( 1024px<= width < 1280px ) {
-  .card-icon img {
-    margin: 15px;
-  }
-}
-@media( 768px<= width < 1024px ) {
-  .card-icon img {
-    width: 220px;
-    height: 220px;
-    border: 1.5px solid blueviolet;
-    margin: 15px;
-  }
-}
-@media( 480px<= width < 768px ) {
-  .card-icon img {
-    width: 190px;
-    height: 190px;
-    border: 1.5px solid blueviolet;
-    margin: 10px;
-  }
-}
-@media( width < 480px ) {
-  .card-icon img {
-    width: 250px;
-    height: 250px;
-
-  }
-}
-dialog{
-  border: none;
-  margin: 0 auto;
-  padding: 10px 0;
-  border-radius: 20px;
-}
-.selected {
-  text-align: center;
-  margin: 0 auto;
-}
-.selected p, span {
-  font-size: 1.1em;
-}
-@media( 768px<= width < 1024px ) {
-  .selected p, span {
-    font-size: 1.2em;
-  }
-}
-@media( width < 768px ) {
-  .selected p, span {
-    font-size: 0.9em;
-  }
-}
-h3 {
-  font-size: 2em;
-}
-@media( 768px<= width < 1024px ) {
-  h3 {
-    font-size: 1.6em;
-  }
-}
-@media( width < 768px ) {
-  h3 {
-    font-size: 1.3em;
-  }
-}
-.container-botao-conheca {
-  margin: 0 auto;
-  width: 1280px;
-  height: 200px;
-}
-@media( 1024px<= width < 1280px ) {
-  .container-botao-conheca {
-    width: 1024px;
-    height: 180px;
-  }
-}
-@media( 768px<= width < 1024px ) {
-  .container-botao-conheca {
-    width: 768px;
-    height: 180px;
-  }
-}
-@media( 480px<= width < 768px ) {
-  .container-botao-conheca {
-    width: 480px;
-    height: 180px;
-  }
-}
-@media( width < 480px ) {
-  .container-botao-conheca {
-    width: 300px;
-    height: 160px;
-  }
-}
-
-button, #botaoConheca {
-  width: 90%;
-  height: 60px;
-  margin: 0 auto;
-  line-height: 60px;
-  background-color: lightcoral;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  font-size: 1.6em;
-  cursor: pointer;
-}
-@media( 768px<= width < 1024px ) {
-  button, #botaoConheca {
-    height: 50px;
-    line-height: 50px;
-  }
-}
-@media( width < 480px ) {
-  button, #botaoConheca {
-    margin-top: 10px;
-    height: 50px;
-    line-height: 50px;
-  }
-}
-
-.modal-content {
-  width: 75vw;
-  height: 80vh;
-  margin: 30px auto;
-}
-@media( 768px<= width < 1024px ) {
-  .modal-content {
-    margin-top: 10px;
-  }
-}
-@media( 480px<= width < 768px ) {
-  .modal-content {
-    width: 95vw;
-    height: 90vh;
-    margin: 30px auto;
-  }
-}
-@media( width < 480px ) {
-  .modal-content {
-    width: 95vw;
-    height: 90vh;
-    margin: 10px auto;
-  }
-}
-.selected {
-  width: 80%;
-}
-#imgCardSelected {
+/* Estilo do modal */
+.modal {
+  display: none; /* Por padrão, o modal está oculto */
+  position: fixed; /* Permite que o modal cubra toda a janela */
+  top: 0;
+  left: 0;
   width: 100%;
-  max-width: 830px;
-  margin: 0 auto;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
+  z-index: 1; /* Coloca o modal acima de outros elementos */
+}
+
+/* Estilo do conteúdo do modal */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* Centraliza o modal verticalmente */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  position: relative;
+}
+
+/* Estilo do botão de fechar (×) */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Estilize o link como um botão de ação se desejar */
+.card-title {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.card-title:hover {
+  text-decoration: underline;
 }
