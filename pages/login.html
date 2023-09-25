@@ -31,7 +31,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Nunito+Sans:wght@400;700&display=swap"
     rel="stylesheet">
-
+    <script src="../scripts/scriptLogin.js" defer></script>
 
 
 </head>
@@ -106,15 +106,16 @@
         <div class="content">
             <form id="form">
                 <div>
-                    <input type="email" placeholder="Digite seu email" class="inputs required" oninput="emailValidate()">
+                    <input id="imputEmail" type="email" placeholder="Digite seu email" class="inputs required" required>
                     <span class="span-required">Digite um email válido</span>
                 </div>
                 <div>
-                    <input type="password" placeholder="Senha" class="inputs required" oninput="mainPasswordValidate()">
+                    <input id="imputSenha" type="password" placeholder="Senha" class="inputs required" required>
                     <span class="span-required">Digite uma senha com no mínimo 8 caracteres</span>
                 </div>
-                <button type="submit">Login</button>
-            </form>
+                <button id= "button" type="submit">Login</button>
+              </form>
+              
         </div>
       </section>
   </main>
