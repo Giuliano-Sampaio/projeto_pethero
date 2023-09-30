@@ -4,7 +4,7 @@ let button = document.getElementById ("button")
 
 let listaUsuarios = [ /*array de objetos, cada objeto contém as informações dos usuários*/
         {
-            emailCad:'bianca@gmail.com',
+            emailCad:'rosana@pethero.com.br',
             senhaCad:'654321',
             userIDcad:"001"
         },
