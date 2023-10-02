@@ -37,6 +37,27 @@ window.onclick = function(event) {
 }
 
 
+  // Função para abrir o modal e preenchê-lo com informações
+  function openModal(nome, raca, idade) {
+    var modal = document.getElementById("myModal");
+    var nomeElement = modal.querySelector("h3");
+    var racaElement = modal.querySelector("h4:nth-of-type(1)");
+    var idadeElement = modal.querySelector("h4:nth-of-type(2)");
+
+    nomeElement.textContent = "Nome: " + nome;
+    racaElement.textContent = "Raça: " + raca;
+    idadeElement.textContent = "Idade: " + idade;
+
+    modal.style.display = "block";
+  }
+
+  // Função para fechar o modal
+  function closeModal() {
+    var modal = document.getElementById("myModal");
+    modal.style.display = "none";
+  }
+
+
 /**
  * navbar toggle
  */
