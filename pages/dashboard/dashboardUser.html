@@ -33,7 +33,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     rel="stylesheet" />
-
+    <script src="./assets/js/scriptUser.js" defer></script>
 </head>
 
 <body>
@@ -142,11 +142,11 @@
           <div class="profile-card-wrapper">
 
             <figure class="card-avatar">
-              <img src="/img/hero01.jpg" alt="Elizabeth Foster" width="68" height="68">
+              <img id="imgCuidador" alt="Elizabeth Foster" width="68" height="68">
             </figure>
 
             <div>
-              <p class="card-title">Ana</p>
+              <p id="nome" class="card-title"></p>
 
               <p class="card-subtitle">Cuidadora Independente</p>
             </div>
@@ -159,7 +159,7 @@
               <a href="mailto:elizabethfoster@mail.com" class="contact-link icon-box">
                 <span class="material-symbols-rounded  icon">Email</span>
 
-                <p class="text">[ana@mail.com</p>
+                <p id="emailTelaUser"class="text"></p>
               </a>
             </li>
 
@@ -167,7 +167,7 @@
               <a href="tel:00123456789" class="contact-link icon-box">
                 <span class="material-symbols-rounded  icon">call</span>
 
-                <p class="text">(00) 91234-5678</p>
+                <p id= "telefone" class="text"></p>
               </a>
             </li>
 
@@ -175,7 +175,7 @@
               <a href="nasc:30/12/1994" class="contact-link icon-box">
                 <span class="material-symbols-rounded  icon">cake</span>
 
-                <p class="text">30/12/1994</p>
+                <p id="dataNasc"class="text"></p>
               </a>
             </li>
 
@@ -320,7 +320,58 @@
               <time class="card-date" datetime="2022-04-09">09 Abril 2023</time>
 
               <h3 class="card-title">
-                <a href="#">Thor</a>
+                <a id="pet1Nome" href="#">Thor</a>
+              </h3>
+
+              <div class="card-badge blue">Pitbull</div>
+
+              <p id = "descricaoPet" class="card-text">
+                
+              </p>
+            </div>
+          </li>
+<!-- 
+          <li class="project-item">
+            <div class="card project-card" style="background-color: #dcdde1;">
+
+              <button class="card-menu-btn icon-box" aria-label="More" data-menu-btn>
+                <span class="material-symbols-rounded  icon">more_horiz</span>
+              </button>
+
+              <ul class="ctx-menu">
+
+                <li class="ctx-item">
+                  <button class="ctx-menu-btn icon-box">
+                    <span class="material-symbols-rounded  icon" aria-hidden="true">visibility</span>
+
+                    <span class="ctx-menu-text"><a href="/pages/adoteUmPet.html">Ver</a></span>
+                  </button>
+                </li>
+
+                <li class="ctx-item">
+                  <button class="ctx-menu-btn icon-box">
+                    <span class="material-symbols-rounded  icon" aria-hidden="true">edit</span>
+
+                    <span class="ctx-menu-text">Editar</span>
+                  </button>
+                </li>
+
+                <li class="divider"></li>
+
+                <li class="ctx-item">
+                  <button class="ctx-menu-btn red icon-box">
+                    <span class="material-symbols-rounded  icon" aria-hidden="true">delete</span>
+
+                    <span class="ctx-menu-text">Deletar</span>
+                  </button>
+                </li>
+
+              </ul>
+
+              <time class="card-date" datetime="2022-04-09">09 Abril 2023</time>
+
+              <h3 class="card-title">
+                <a id="pet2Nome" href="#"></a>
               </h3>
 
               <div class="card-badge blue">Pitbull</div>
@@ -371,7 +422,7 @@
               <time class="card-date" datetime="2022-04-09">09 Abril 2023</time>
 
               <h3 class="card-title">
-                <a href="#">Thor</a>
+                <a id="pet3Nome"href="#"></a>
               </h3>
 
               <div class="card-badge blue">Pitbull</div>
@@ -380,58 +431,7 @@
                 Dócio, brincalhão...
               </p>
             </div>
-          </li>
-
-          <li class="project-item">
-            <div class="card project-card" style="background-color: #dcdde1;">
-
-              <button class="card-menu-btn icon-box" aria-label="More" data-menu-btn>
-                <span class="material-symbols-rounded  icon">more_horiz</span>
-              </button>
-
-              <ul class="ctx-menu">
-
-                <li class="ctx-item">
-                  <button class="ctx-menu-btn icon-box">
-                    <span class="material-symbols-rounded  icon" aria-hidden="true">visibility</span>
-
-                    <span class="ctx-menu-text"><a href="/pages/adoteUmPet.html">Ver</a></span>
-                  </button>
-                </li>
-
-                <li class="ctx-item">
-                  <button class="ctx-menu-btn icon-box">
-                    <span class="material-symbols-rounded  icon" aria-hidden="true">edit</span>
-
-                    <span class="ctx-menu-text">Editar</span>
-                  </button>
-                </li>
-
-                <li class="divider"></li>
-
-                <li class="ctx-item">
-                  <button class="ctx-menu-btn red icon-box">
-                    <span class="material-symbols-rounded  icon" aria-hidden="true">delete</span>
-
-                    <span class="ctx-menu-text">Deletar</span>
-                  </button>
-                </li>
-
-              </ul>
-
-              <time class="card-date" datetime="2022-04-09">09 Abril 2023</time>
-
-              <h3 class="card-title">
-                <a href="#">Thor</a>
-              </h3>
-
-              <div class="card-badge blue">Pitbull</div>
-
-              <p class="card-text">
-                Dócio, brincalhão...
-              </p>
-            </div>
-          </li>
+          </li> -->
 
         </ul>
 
