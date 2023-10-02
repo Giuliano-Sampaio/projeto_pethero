@@ -57,6 +57,48 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 
+    // Função para abrir o modal e preenchê-lo com informações
+    function openModalHeroi(nome, idade, telefone, endereco) {
+      var modal = document.getElementById("myModalHeroi");
+      var nomeElement = modal.querySelector("h3");
+      var telefoneElement = modal.querySelector("h4:nth-of-type(1)");
+      var idadeElement = modal.querySelector("h4:nth-of-type(2)");
+      var enderecoElement = modal.querySelector("h4:nth-of-type(3)");
+  
+      nomeElement.textContent = "Nome: " + nome;
+      idadeElement.textContent = "Idade: " + idade;
+      enderecoElement.textContent = "Endereço: " + endereco;
+      telefoneElement.textContent = "Telefone: " + telefone;
+      
+  
+      modal.style.display = "block";
+    }
+  
+    // Função para fechar o modal
+    function closeModalHeroi() {
+      var modal = document.getElementById("myModalHeroi");
+      modal.style.display = "none";
+    }
+
+    //Envio de mensagem Adote Um Pet
+    /*function sendtowhatsapp() {
+      var name = document.getElementById("name").value;
+      var email = document.getElementById("email").value;
+      var phone = document.getElementById("telefone").value;
+      var endereco = document.getElementById("endereco").value;
+      var mensagem = document.getElementById("message").value;
+
+      var url = "https://wa.me/+5588997283479?text="
+        + "Nome: " + name + "%0a"
+        + "E-mail: " + email + "%0a"
+        + "Telefone: " + phone + "%0a"
+        + "Endereço: " + endereco + "%0a"
+        + "Mensagem: " + mensagem;
+
+      window.open(url, '_blank').focus();
+
+    };
+    */
 
 /**
  * navbar toggle
