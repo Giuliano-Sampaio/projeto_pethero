@@ -112,26 +112,27 @@
           <h3>Preencha suas informações</h3>
           <form id="form">
 
-              <label for="name">Nome Completo:</label>
-              <input type="text" id="name">
+              <label for="name">Nome Completo*:</label>
+              <input tid="imputName" type="text" placeholder="João Silva" class="inputs required" required>
 
-              <label for="email">E-mail:</label>
-              <input type="email" id="email">
+              <label for="email">E-mail*:</label>
+              <input tid="imputEmail" type="email" placeholder="name@mail.com" class="inputs required" required>
 
               <label for="password">Crie uma senha:</label>
-              <input type="password" id="password">
+              <input id="imputSenha" type="password" placeholder="Senha" class="inputs required" required>
 
               <label for="contato">Telefone:</label>
-              <input type="text" id="contato">
+              <input id="imputContato" type="tel" placeholder="(xx)91234-5678" class="inputs required" required>
 
               <button type="submit">Enviar</button>
               
               <div>
                 * Campos Obrigatórios
               </div>
-
-              
-                  
+          </form>
+        </div>
+      </section>
+    </article>    
   </main>
 
 
