@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
   <!-- 
     - Titulo Site
   -->
@@ -110,122 +111,27 @@
           <h1>Cadastro de Heróis</h1>
           <h3>Preencha suas informações</h3>
           <form id="form">
-              <div>
-                  <input type="text" placeholder="Digite seu nome" class="inputs required" oninput="nameValidate()">
-                  <span class="span-required">Nome Completo</span>
-              </div>
-              <div>
-                <input type="date" placeholder="Selecione sua data de nascimento" class="inputs required" oninput="dateValidate()">
-                <span class="span-required">Data de Nascimento</span>
-              </div>
-              <div>
-                <input type="text" placeholder="Digite sua Cidade" class="inputs required" oninput="cityValidate()">
-                <span class="span-required">Cidade</span>
-              </div>
-              <div class="select-box">
-                <select id="estado" name="estado">
-                  <option value="AC">Acre</option>
-                  <option value="AL">Alagoas</option>
-                  <option value="AP">Amapá</option>
-                  <option value="AM">Amazonas</option>
-                  <option value="BA">Bahia</option>
-                  <option value="CE">Ceará</option>
-                  <option value="DF">Distrito Federal</option>
-                  <option value="ES">Espírito Santo</option>
-                  <option value="GO">Goiás</option>
-                  <option value="MA">Maranhão</option>
-                  <option value="MT">Mato Grosso</option>
-                  <option value="MS">Mato Grosso do Sul</option>
-                  <option value="MG">Minas Gerais</option>
-                  <option value="PA">Pará</option>
-                  <option value="PB">Paraíba</option>
-                  <option value="PR">Paraná</option>
-                  <option value="PE">Pernambuco</option>
-                  <option value="PI">Piauí</option>
-                  <option value="RJ">Rio de Janeiro</option>
-                  <option value="RN">Rio Grande do Norte</option>
-                  <option value="RS">Rio Grande do Sul</option>
-                  <option value="RO">Rondônia</option>
-                  <option value="RR">Roraima</option>
-                  <option value="SC">Santa Catarina</option>
-                  <option value="SP">São Paulo</option>
-                  <option value="SE">Sergipe</option>
-                  <option value="TO">Tocantins</option>
-                  <option value="EX">Estrangeiro</option>
-              </select>
-              </div>
-              <div>
-                  <input type="email" placeholder="Digite seu melhor email" class="inputs required" oninput="emailValidate()">
-                  <span class="span-required">Digite um email válido</span>
-              </div>
-              <div>
-                  <input type="password" placeholder="Senha" class="inputs required" oninput="mainPasswordValidate()">
-                  <span class="span-required">Digite uma senha com no mínimo 8 caracteres</span>
-              </div>
-              <div>
-                  <input type="tel" class="inputs required" oninput="telValidate()" placeholder="(99) 9 9999-9999" pattern="(\([0-9]{2}\))\s([9]{1})?([0-9])([0-9]{4})-([0-9]{4})">
-                  <span class="span-required">Telefone</span>
-              </div>
-              <strong><p>Categoria</p></strong>
-              <div class="grid-list">
-                  <div>
-                      <input type="radio" id="d" value="d" name="doador">
-                      <label for="d">Doador(a)</label>
-                  </div>
-                  <div>
-                      <input type="radio" id="t" value="t" name="tutor">
-                      <label for="t">Tutor(a)</label>
-                  </div>
-                  <div>
-                    <input type="radio" id="v" value="v" name="veterinario">
-                    <label for="v">Veterinário(a)</label>
-                </div>
-                <div>
-                  <input type="radio" id="psv" value="psv" name="petsittervoluntario">
-                  <label for="psv">Pet-Sitter Voluntário(a)</label>
-              </div>
-                  <div>
-                      <input type="radio" id="o" value="o" name="sexo">
-                      <label for="o">Outro</label>
-                  </div>
-              </div>
-              <strong><p>Doações</p></strong>
-              <div>
-                  <div>
-                    <select>
-                      <option value="Racao">Ração</option>
-                      <option value="Doar Pet-Happy">Doar Pet-Happy</option>
-                      <option value="Fazer Pix">Fazer Pix</option>
-                      <option value="Doar Produto de Limpeza">Doar Produto de Limpeza</option>
-                      <option value="Pet Dayli">Pet Dayli(Um dia com os Pets.)</option>
-                    </select>
-                  </div>
-              </div>
-              <textarea class="inputs" name="outras info" id="outras info" cols="25" rows="10" placeholder="Outras Informações"></textarea>
-              <strong><p>Categoria</p></strong>
-              <div class="grid-list">
-                  <div>
-                      <input type="radio" id="d" value="d" name="doador">
-                      <label for="d">Redes Sociais</label>
-                  </div>
-                  <div>
-                      <input type="radio" id="t" value="t" name="tutor">
-                      <label for="t">Indicação de Amigo</label>
-                  </div>
-                  <div>
-                    <input type="radio" id="v" value="v" name="veterinario">
-                    <label for="v">Voluntários</label>
-                </div>
-                <div>
-                  <input type="radio" id="psv" value="psv" name="petsittervoluntario">
-                  <label for="psv">Outros Meios</label>
-              </div>
-              </div>
-              <button type="submit">Enviar</button>
-          </form>
-      </div>
-      </section>
 
+              <label for="name">Nome Completo:</label>
+              <input type="text" id="name">
+
+              <label for="email">E-mail:</label>
+              <input type="email" id="email">
+
+              <label for="password">Crie uma senha:</label>
+              <input type="password" id="password">
+
+              <label for="contato">Telefone:</label>
+              <input type="text" id="contato">
+
+              <button type="submit">Enviar</button>
+              
+              <div>
+                * Campos Obrigatórios
+              </div>
+
+              
+                  
   </main>
 
 
