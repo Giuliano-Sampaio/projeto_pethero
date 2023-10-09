@@ -27,7 +27,9 @@ CREATE TABLE AnimaisCadastrados (
     nome VARCHAR(255) NOT NULL,
     raca VARCHAR(255),
     idade VARCHAR(50),
-    imagem VARCHAR(255)
+    imagem VARCHAR(255),
+    cuidador_id INT,
+    FOREIGN KEY (cuidador_id) REFERENCES Cuidadores(id)
 );
 
 CREATE TABLE Comentarios (
@@ -141,23 +143,23 @@ VALUES
 
 INSERT INTO AnimaisCadastrados (nome, raca, idade, imagem)
 VALUES
-('Bella', 'Golden Retriever', '3 anos', 'imagem_url_1'),
-('Max', 'Labrador', '4 anos', 'imagem_url_2'),
-('Luna', 'Bulldog Francês', '2 anos', 'imagem_url_3'),
-('Charlie', 'Beagle', '1 ano', 'imagem_url_4'),
-('Lucy', 'Poodle', '5 anos', 'imagem_url_5'),
-('Cooper', 'Rottweiler', '3 anos', 'imagem_url_6'),
-('Mia', 'Dachshund', '2 anos', 'imagem_url_7'),
-('Rex', 'Husky Siberiano', '4 anos', 'imagem_url_8'),
-('Rock', 'Chihuahua', '1 ano', 'imagem_url_9'),
-('Bailey', 'Pug', '3 anos', 'imagem_url_10'),
-('Lily', 'Dálmata', '2 anos', 'imagem_url_11'),
-('Leo', 'Border Collie', '4 anos', 'imagem_url_12'),
-('Zoe', 'Bichon Frisé', '5 anos', 'imagem_url_13'),
-('Risco', 'Doberman', '3 anos', 'imagem_url_14'),
-('Toba', 'Shih Tzu', '2 anos', 'imagem_url_15'),
-('Flash', 'Boxer', '1 ano', 'imagem_url_16'),
-('Oscar', 'Schnauzer', '3 anos', 'imagem_url_17'),
-('Coco', 'Bulldog Inglês', '4 anos', 'imagem_url_18'),
-('Lola', 'Akita', '2 anos', 'imagem_url_19'),
-('Mito', 'Yorkshire Terrier', '5 anos', 'imagem_url_20');
+('Bella', 'Golden Retriever', '3 anos', 'imagem_url_1', 1),
+('Max', 'Labrador', '4 anos', 'imagem_url_2', 1),
+('Luna', 'Bulldog Francês', '2 anos', 'imagem_url_3', 1),
+('Charlie', 'Beagle', '1 ano', 'imagem_url_4', 1),
+('Lucy', 'Poodle', '5 anos', 'imagem_url_5', 1),
+('Cooper', 'Rottweiler', '3 anos', 'imagem_url_6', 1),
+('Mia', 'Dachshund', '2 anos', 'imagem_url_7', 1),
+('Rex', 'Husky Siberiano', '4 anos', 'imagem_url_8', 2),
+('Rock', 'Chihuahua', '1 ano', 'imagem_url_9', 2),
+('Bailey', 'Pug', '3 anos', 'imagem_url_10', 2),
+('Lily', 'Dálmata', '2 anos', 'imagem_url_11', 2),
+('Leo', 'Border Collie', '4 anos', 'imagem_url_12', 2),
+('Zoe', 'Bichon Frisé', '5 anos', 'imagem_url_13', 2),
+('Risco', 'Doberman', '3 anos', 'imagem_url_14', 3),
+('Toba', 'Shih Tzu', '2 anos', 'imagem_url_15', 3),
+('Flash', 'Boxer', '1 ano', 'imagem_url_16', 3),
+('Oscar', 'Schnauzer', '3 anos', 'imagem_url_17', 3),
+('Coco', 'Bulldog Inglês', '4 anos', 'imagem_url_18', 3),
+('Lola', 'Akita', '2 anos', 'imagem_url_19', 4),
+('Mito', 'Yorkshire Terrier', '5 anos', 'imagem_url_20', 4);
