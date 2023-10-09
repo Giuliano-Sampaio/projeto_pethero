@@ -91,7 +91,7 @@ DELETE FROM Cuidadores WHERE id = 1;
 INSERT INTO AnimaisCadastrados
 (nome, raca, idade, imagem)
 VALUES
-('Nome do Animal', 'Raça do Animal', 'Idade do Animal', 'imagem_url');
+('Nome do Animal', 'Raça do Animal', 'Idade do Animal', 'imagem_url', 'cuidador_id');
 
 /* READ listar todos os AnimaisCadastrados */
 SELECT * FROM AnimaisCadastrados;
@@ -141,7 +141,7 @@ VALUES
 ('Carlos Pereira', 'carlos@example.com', '1111111111', '1995-04-18', 'imagem_url_5', 'Avenida da Praia', 'Fortaleza', 'CE', 'Brasil')
 ;
 
-INSERT INTO AnimaisCadastrados (nome, raca, idade, imagem)
+INSERT INTO AnimaisCadastrados (nome, raca, idade, imagem, cuidador_id)
 VALUES
 ('Bella', 'Golden Retriever', '3 anos', 'imagem_url_1', 1),
 ('Max', 'Labrador', '4 anos', 'imagem_url_2', 1),
@@ -163,3 +163,26 @@ VALUES
 ('Coco', 'Bulldog Inglês', '4 anos', 'imagem_url_18', 3),
 ('Lola', 'Akita', '2 anos', 'imagem_url_19', 4),
 ('Mito', 'Yorkshire Terrier', '5 anos', 'imagem_url_20', 4);
+
+
+/* Consultas Join (Junção de tabelas) */
+/* selecione todos os registros em comum das tabelas cuidador e animais cadastrados */
+SELECT Cuidadores.*, AnimaisCadastrados.*
+FROM Cuidadores
+INNER JOIN AnimaisCadastrados ON Cuidadores.id = AnimaisCadastrados.cuidador_id;
+
+/* selecione os registros em comum das tabelas fazendo uma junção trazendo os campos nome do cuidador e nome do animal cadastrado  */
+SELECT Cuidadores.nome AS nome_cuidador, AnimaisCadastrados.nome AS nome_animal
+FROM Cuidadores
+INNER JOIN AnimaisCadastrados ON Cuidadores.id = AnimaisCadastrados.cuidador_id;
+
+/* As duas consultas abaixo(RIGHT JOIN e LEFT JOIN), podem trazer valores nulos caso a outra tabela não tenha registro vinculado a tabela a qual esta sendo chamada todos os registros. */
+/* selecione todos os registros trazendo todos relacionados com a tabela AnimaisCadastrados */
+SELECT Cuidadores.*, AnimaisCadastrados.*
+FROM Cuidadores
+RIGHT JOIN AnimaisCadastrados ON Cuidadores.id = AnimaisCadastrados.cuidador_id;
+
+/* selecione todos os registros em comum das tabelas trazendo todos os registros da tabela cuidadores */
+SELECT Cuidadores.*, AnimaisCadastrados.*
+FROM Cuidadores
+LEFT JOIN AnimaisCadastrados ON Cuidadores.id = AnimaisCadastrados.cuidador_id;
