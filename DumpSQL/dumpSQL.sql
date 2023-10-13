@@ -34,11 +34,9 @@ CREATE TABLE AnimaisCadastrados (
 
 CREATE TABLE Comentarios (
   comentario_id INT PRIMARY KEY,
-  animal_id INT,
   usuario_id INT,
   texto TEXT,
   data_comentario DATE,
-  FOREIGN KEY (animal_id) REFERENCES AnimaisCadastrados(id),
   FOREIGN KEY (usuario_id) REFERENCES Cuidadores(id)
 );
 
@@ -111,9 +109,9 @@ DELETE FROM AnimaisCadastrados WHERE id = 1;
 /* CRUD para Comentarios */
 /* CREATE Comentarios */
 INSERT INTO Comentarios
-(comentario_id, animal_id, usuario_id, texto, data_comentario)
+(comentario_id, usuario_id, texto, data_comentario)
 VALUES
-(1, 1, 1, 'Texto do Comentário', '2023-10-02');
+(1, 1, 'Texto do Comentário', '2023-10-02');
 
 /* READ listar todos os Comentarios */
 SELECT * FROM Comentarios;
