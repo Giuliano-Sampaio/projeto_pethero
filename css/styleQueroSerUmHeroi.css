@@ -27,6 +27,7 @@
     padding: 1rem;
     min-width: 10%;
     overflow: auto;
+    margin: 2rem;
 }
 
 h1, h3{
