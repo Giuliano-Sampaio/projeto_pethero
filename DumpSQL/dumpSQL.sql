@@ -67,7 +67,7 @@ DELETE FROM Admin WHERE id = 1;
 INSERT INTO Cuidadores
 (nome, email, telefone, dataNascimento, imagem, endereco, cidade, estado, pais)
 VALUES
-('Nome do Cuidador', 'cuidador@example.com', '1234567890', '2000-01-01', 'imagem_url', 'Endereço do Cuidador', 'Cidade do Cuidador', 'Estado do Cuidador', 'Pais do Cuidador');
+('Nome do Cuidador', 'cuidador@example.com', '2199998888', '2000-01-01', 'imagem_url', 'Endereço do Cuidador', 'Cidade do Cuidador', 'Estado do Cuidador', 'Pais do Cuidador');
 
 /* READ listar todos os Cuidadores */
 SELECT * FROM Cuidadores;
@@ -132,11 +132,12 @@ DELETE FROM Comentarios WHERE comentario_id = 1;
 INSERT INTO Cuidadores
 (nome, email, telefone, dataNascimento, imagem, endereco, cidade, estado, pais)
 VALUES
-('João Silva', 'joao@example.com', '1234567890', '1985-05-15', 'imagem_url_1', 'Avenida Principal', 'São Paulo', 'SP', 'Brasil'),
-('Maria Souza', 'maria@example.com', '9876543210', '1990-02-22', 'imagem_url_2', 'Rua das Flores', 'Rio de Janeiro', 'RJ', 'Brasil'),
-('Pedro Santos', 'pedro@example.com', '5555555555', '1988-07-10', 'imagem_url_3', 'Boulevard Avenue', 'Belo Horizonte', 'MG', 'Brasil'),
-('Ana Oliveira', 'ana@example.com', '7777777777', '1982-11-30', 'imagem_url_4', 'Rua das Palmeiras', 'Salvador', 'BA', 'Brasil'),
-('Carlos Pereira', 'carlos@example.com', '1111111111', '1995-04-18', 'imagem_url_5', 'Avenida da Praia', 'Fortaleza', 'CE', 'Brasil')
+('João Silva', 'joao@example.com', '21999997777', '1985-05-15', 'imagem_url_1', 'Avenida Principal', 'São Paulo', 'SP', 'Brasil'),
+('Maria Souza', 'maria@example.com', '21999997778', '1990-02-22', 'imagem_url_2', 'Rua das Flores', 'Rio de Janeiro', 'RJ', 'Brasil'),
+('Pedro Santos', 'pedro@example.com', '21999997779', '1988-07-10', 'imagem_url_3', 'Boulevard Avenue', 'Belo Horizonte', 'MG', 'Brasil'),
+('Ana Oliveira', 'ana@example.com', '21999997780', '1982-11-30', 'imagem_url_4', 'Rua das Palmeiras', 'Salvador', 'BA', 'Brasil'),
+('Carlos Pereira', 'carlos@example.com', '21999997781', '1995-04-18', 'imagem_url_5', 'Avenida da Praia', 'Fortaleza', 'CE', 'Brasil'),
+('Mano Chanths', 'chanths@email.com', '21999997782', '1995-04-18', 'imagem_url_5', 'Avenida da Praia', 'Fortaleza', 'CE', 'Brasil')
 ;
 
 INSERT INTO AnimaisCadastrados (nome, raca, idade, imagem, cuidador_id)
@@ -160,7 +161,11 @@ VALUES
 ('Oscar', 'Schnauzer', '3 anos', 'imagem_url_17', 3),
 ('Coco', 'Bulldog Inglês', '4 anos', 'imagem_url_18', 3),
 ('Lola', 'Akita', '2 anos', 'imagem_url_19', 4),
-('Mito', 'Yorkshire Terrier', '5 anos', 'imagem_url_20', 4);
+('Mito', 'Yorkshire Terrier', '5 anos', 'imagem_url_20', 4)
+('Oscaramujo', 'Schnauzer', '4 anos', 'imagem_url_21', null),
+('CocoNut', 'Bulldog Africano', '6 anos', 'imagem_url_22', null),
+('Lolita', 'Akita', '12 anos', 'imagem_url_23', null),
+('Mitologico', 'SRD', '5 anos', 'imagem_url_20', null);
 
 
 /* Consultas Join (Junção de tabelas) */
@@ -184,3 +189,10 @@ RIGHT JOIN AnimaisCadastrados ON Cuidadores.id = AnimaisCadastrados.cuidador_id;
 SELECT Cuidadores.*, AnimaisCadastrados.*
 FROM Cuidadores
 LEFT JOIN AnimaisCadastrados ON Cuidadores.id = AnimaisCadastrados.cuidador_id;
+
+/* Consulta para listar o nome do cuidador e o total de animais por cuidador */
+SELECT Cuidadores.nome AS nome_cuidador, COUNT(AnimaisCadastrados.id) AS total_animais
+FROM Cuidadores
+LEFT JOIN AnimaisCadastrados ON Cuidadores.id = AnimaisCadastrados.cuidador_id
+GROUP BY Cuidadores.nome
+ORDER BY total_animais DESC;
