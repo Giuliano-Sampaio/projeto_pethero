@@ -343,9 +343,14 @@ body {
 }
 
 .logo {
-  font-size: var(--fs-1);
+  /*font-size: var(--fs-1);
   font-weight: var(--fw-600);
-  color: var(--space-cadet);
+  color: var(--space-cadet);*/
+  
+    font-family: var(--ff-carter_one);
+    font-size: 3rem;
+    color: var(--space-cadet);
+  
 }
 
 .menu-toggle-btn .icon { font-size: 28px; }
