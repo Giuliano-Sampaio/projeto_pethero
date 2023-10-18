@@ -57,7 +57,7 @@ A PetHero vem com a missão de conectar pessoas voluntarias com a causa animal a
 
  * Imagem dos pets disponíveis para adoção com contato e localidade de seu respectivo Herói (cuidador independente).
 
- 6º Tela: ***Quero Ajudar*** - Bianca Sosa
+ 6º Tela: ***Login*** - Bianca Sosa
 
  * Tela destinada a login dos usuários e/ou possíveis ajudantes da causa, seja com doação em dinheiro, rações ou medicamentos.
 
