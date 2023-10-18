@@ -1,0 +1,198 @@
+* {
+    font-family: 'Maven Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* header {
+    background-color: #487eb0;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    margin-bottom: 16px;
+    height: 40px;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; */
+    /* background-color: #333; */
+    /* padding: 10px 20px;
+    color: white;
+  }
+  
+  .navbar-logo {
+    display: block;
+    width: 80px;
+    height: auto;
+  }
+  
+  .navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar-menu li {
+    padding: 0;
+    margin: 0;
+  } */
+  
+  /* .navbar-menu a { diferente do  style.css
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: auto;
+    height: auto;
+    line-height: 50px;
+    padding: 10px 5px;
+    margin: 5px; */
+    /* background-color: #000; 
+    color: #FFF;
+    /* border-radius: 5px; 
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial;
+  }
+  
+
+
+    .navbar a:hover {
+      background-color: #FF8C00;
+      
+      
+      /* border-radius: 8px; *
+  }
+
+ 
+
+.logo {
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+#div1 {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: left;
+  width: 30%;
+  border-radius: 20px;
+}
+
+
+button {
+  background-color: #487eb0;;
+  color: #FF8C00;
+  padding: 5px 7px;
+  cursor: pointer;
+}
+
+h2 {
+  color: #FF8C00;
+}*/
+
+        /* Adicione seu CSS personalizado aqui */
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f2f2f2;
+      }
+
+      header {
+          background-color: #007BFF;
+          color: #fff;
+          text-align: center;
+          padding: 10px 0;
+      }
+
+      .navbar-logo {
+          width: 100px; /* Ajuste o tamanho do logotipo conforme necessário */
+      }
+
+      .navbar {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+      }
+
+      .navbar-menu {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+          display: flex;
+      }
+
+      .navbar-menu li {
+          margin: 0 10px;
+      }
+
+      .navbar-menu a {
+          text-decoration: none;
+          color: #fff;
+      }
+
+      .rec-senha a {
+        text-decoration: none;
+        color: black;
+    }
+
+      main {
+          max-width: 800px;
+          margin: 0 auto;
+          padding: 20px;
+          background-color: #fff;
+          border-radius: 10px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      #div1 {
+          text-align: center;
+      }
+
+      h2 {
+          margin-bottom: 20px;
+      }
+
+      form {
+          display: flex;
+          flex-direction: column;
+      }
+
+      label {
+          font-weight: bold;
+      }
+
+      input[type="email"],
+      input[type="password"] {
+          padding: 10px;
+          margin: 5px 0;
+      }
+
+      button {
+          background-color: #007BFF;
+          color: #fff;
+          padding: 10px;
+          border: none;
+          cursor: pointer;
+      }
+
+      button:hover {
+          background-color: #0056b3;
+      }
+
+      h5 {
+          text-align: center;
+          margin-top: 20px;
+      }
+
+      footer {
+          text-align: center;
+          background-color: #007BFF;
+          color: #fff;
+          padding: 10px 0;
+      }

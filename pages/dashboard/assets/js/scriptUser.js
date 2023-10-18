@@ -9,15 +9,17 @@ function obterParametroURL(nome) {
   
   let nome = document.getElementById("nome")
   let imgCuidador = document.getElementById("imgCuidador")
+  let imgCuidador2 = document.getElementById("imgCuidador2")
   let telefone = document.getElementById("telefone")
   let emailTelaUser = document.getElementById("emailTelaUser")
   let dataNasc = document.getElementById("dataNasc")
   let descricaoPet = document.getElementById("descricaoPet")
   let pet1Foto = document.getElementById("pet1Foto")
   let pet1Nome = document.getElementById("pet1Nome")
-  console.log(pet1Nome)
-  let pet2Nome = document.getElementById("pet2Nome")
-  let pet3Nome = document.getElementById("pet3Nome")
+  /*let pet2Nome = document.getElementById("pet2Nome")
+  let pet3Nome = document.getElementById("pet3Nome")*/
+  let tituloPerfil1 = document.getElementById("tituloPerfil1")
+  console.log(tituloPerfil1)
   
   let listaUsuarios = [ /*array de objetos, cada objeto contém as informações dos usuários*/
         {
@@ -29,10 +31,9 @@ function obterParametroURL(nome) {
             dataNasc:'12/12/1992',
             descricaoPet: 'Dócio, brincalhão...',
             pet1Nome: 'Thor',
-            pet2Nome: 'Bob',
-            pet2Nome: 'Lolla',
-            pet1Foto: '../img/adoteUmPet/dog1.jpg',
-            
+            /*pet2Nome: 'Bob',
+            pet2Nome: 'Lolla',*/
+            pet1Foto: '../img/adoteUmPet/dog1.jpg'
         },
   
         {
@@ -44,7 +45,7 @@ function obterParametroURL(nome) {
             dataNasc:'30/12/1994',
             descricaoPet: 'Dócio, brincalhão...',
             pet1Nome: 'Bella',
-            pet1Foto: '../img/adoteUmPet/dog2.jpg',
+            pet1Foto: '../img/adoteUmPet/dog2.jpg'
         }
     ]
   
@@ -55,9 +56,10 @@ function obterParametroURL(nome) {
         telefone.innerHTML = item.telefone
         emailTelaUser.innerHTML = item.emailCad
         dataNasc.innerHTML = item.dataNasc
-        descricaoPet.innerHTML = item.descricaoPet
-        pet1Foto.src = item.pet1Foto        
+        descricaoPet.innerHTML = item.descricaoPet  
         pet1Nome.textContent = item.pet1Nome
+        tituloPerfil1.innerHTML = item.nome
+        imgCuidador2.src = item.foto
     }
     
   })

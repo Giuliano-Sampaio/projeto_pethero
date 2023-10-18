@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - Titulo Site
+  -->
+  <title>PetHero - Ajudando quem ajuda</title>
+  <meta name="title" content="PetHero - Ajudando quem ajuda.">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="../favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - link css
+  -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/styleUser.css">
+
+  <!-- 
+    - link fontes google
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Nunito+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
+    <script src="../scripts/scriptCuidador.js" defer></script>
+
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <button class="nav-toggle-btn" aria-label="toggle manu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true" class="menu-icon"></ion-icon>
+        <ion-icon name="close-outline" aria-label="true" class="close-icon"></ion-icon>
+      </button>
+
+      <a href="#" class="logo">PetHero</a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="../index.html" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="sobreNos.html" class="navbar-link" data-nav-link>Sobre Nós</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="herois.html" class="navbar-link" data-nav-link>Heróis</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="queroSerUmHeroi.html" class="navbar-link" data-nav-link>Quero Ser Um Herói</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="adoteUmPet.html" class="navbar-link" data-nav-link>Adote Um Pet</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="login.html" class="navbar-link" data-nav-link>Login</a>
+          </li>
+        </ul>
+
+        <a href="login.html" class="navbar-action-btn">Login</a>
+      </nav>    
+    </div>
+  </header>
+
+  <main>
+    <br>
+    <br>
+    <h1>Minha Conta</h1>
+        <section class="textoEsquerda">
+            <div class="container">
+                <p><h2>Minhas informações</h2></p>
+                <button class="botaoEditar"> <img id="iconeEditar" src="../img/icone_editar.png" ></button>
+            </div>
+            <div class="container">
+                <img id= "imgCuidador" class="gridItemImg" >
+                <h4>Nome:</h4> <span id="nome"></span>
+                <h4>Telefone:</h4> <span id="telefone">(47)99999-8888</span>
+                <h4>E-mail:</h4> <span id="emailTelaAdm">rosana@pethero.com.br</span>
+                <h4>Data de nascimento: </h4> <span id="dataNasc">12/12/1970</span>
+                <h4>Descrição perfil: </h4> <span id="descriçãoPerfil">Minha vida é lutar pelos animais que são abandonados a propria sorte, para mim eles são anjinhos que não falam a nossa lingua mas estão neste mundo apenas para nos dar amor. Se vc se identifica com essa causa Junte-se a mim</span>
+            </div>
+        </section>
+
+        <section class="textoEsquerda">
+            <div class="container">
+                <p><h2>Pets para adoção</h2></p>
+                            
+            </div>
+
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img class="gridItemImg" src="../img/adoteUmPet/dog1.jpg" alt="Animal 1">
+                    <h3><span>Bella</span></h3>
+                    <button class="botaoEditar"><img id="iconeEditar" src="../img/icone_editar.png"></button>
+                </div>
+
+                <div class="grid-item">
+                    <img class="gridItemImg" src="../img/adoteUmPet/gato2.jpg" alt="Animal 2">
+                    <h3>Max</h3>
+                    <button class="botaoEditar"><img id="iconeEditar" src="../img/icone_editar.png"></button>
+                </div>
+
+                <div class="grid-item">
+                    <img class="gridItemImg" src="../img/adoteUmPet/dog5.jpg" alt="Animal 4">
+                    <h3>Thor</h3>
+                    <button class="botaoEditar"><img id="iconeEditar" src="../img/icone_editar.png"></button>
+                </div>
+                <div class="grid-item">
+                    <img class="gridItemImg" src="../img/adoteUmPet/dog4.jpg" alt="Animal 5">
+                    <h3>Rocky</h3>
+                    <button class="botaoEditar"><img id="iconeEditar" src="../img/icone_editar.png"></button>
+                </div>
+
+            </div>
+        </section>
+
+        <button class="botaoExcluir">Excluir conta</button>
+        
+    
+  </main>
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" style="background-image: url('../img/footerBlue.png')">
+
+    <div class="footer-top section">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">Pet Hero</a>
+
+          <p class="footer-text" style="color: white;">
+            Para mais perguntas, entre em contato. <strong><a href="mailto:suport@gmail.com"
+              class="link">suport@gmail.com</a></strong>
+          </p>
+
+          <ul class="contact-list">
+
+            <li class="contact-item">
+              <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+              <address class="address">
+                Brasil
+              </address>
+            </li>
+
+            <li class="contact-item">
+              <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+
+              <a href="tel:+55xx999999999" class="contact-link">+55 (xx) 9.9999-9999</a>
+            </li>
+
+          </ul>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list" style="color: white;">
+
+          <li>
+            <p class="footer-list-title">Mapa do Site</p>
+          </li>
+
+          <li>
+            <a href="index.html" class="footer-link">Home</a>
+          </li>
+
+          <li>
+            <a href="pages/sobreNos.html" class="footer-link">Sobre Nós</a>
+          </li>
+
+          <li>
+            <a href="pages/herois.html" class="footer-link">Herós</a>
+          </li>
+
+          <li>
+            <a href="pages/queroSerUmHeroi.html" class="footer-link">Quero Ser Um Herói</a>
+          </li>
+
+          <li>
+            <a href="pages/queroSerUmHeroi.html" class="footer-link">Adote Um Pet</a>
+          </li>
+
+          <li>
+            <a href="pages/login.html" class="footer-link">Login</a>
+          </li>
+
+        </ul>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright" style="color: white;">
+          &copy; 2023 Todos os direitos reservados a <a href="#top" class="copyright-link">PetHero.</a>
+        </p>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- 
+    - #Volta para o Topo
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="../scripts/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
